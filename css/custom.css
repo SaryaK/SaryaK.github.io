@@ -11,6 +11,41 @@
   font-display: block;
 }
 
+/* 背景图片适应 */
+#page-header {
+  background-position: cover !important;
+}
+
+/* 设置代码块中的 tab 等于 4 个空格 */
+code,
+pre {
+  tab-size: 4;
+  -moz-tab-size: 4;
+  /* Firefox */
+  -o-tab-size: 4;
+  /* Opera */
+}
+
+/* 鼠标修改 */
+/*指针样式*/
+body {
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+    default !important;
+}
+
+/*链接小手样式*/
+a,
+img {
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+    default !important;
+}
+
+/* 目录字体大小 */
+#card-toc {
+  font-size: 16px;
+  /* 修改为你想要的字体大小 */
+}
+
 
 /* 一级菜单居中 */
 #nav .menus_items {
@@ -29,7 +64,6 @@
 .menus_items .menus_item:nth-child(2) .menus_item_child {
   left: -125px;
 }
-
 
 /* 侧边栏个人信息卡片动态渐变色 */
 #aside-content>.card-widget.card-info {
@@ -112,4 +146,14 @@ h3 {
   background-color: rgba(173, 216, 230, 0.4);
   border-radius: 10px;
   padding: 10px;
+}
+
+
+/* 鼠标悬停卡片的样式 */
+.recent-post-item:hover {
+  transform: scale(1.02);
+  /* 蓝光 */
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.4), 0 0 30px rgba(0, 123, 255, 0.3) !important;
+  /* 粉光 */
+  /* box-shadow: 0 0 15px rgba(255, 182, 193, 0.4), 0 0 30px rgba(255, 182, 193, 0.3) !important; */
 }

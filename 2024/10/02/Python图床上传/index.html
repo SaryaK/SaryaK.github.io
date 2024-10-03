@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Python免费图床上传 | Sarya🧊</title><meta name="author" content="Sarya"><meta name="copyright" content="Sarya"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="随机图片API使用ImgURL，免费额度1G，国内访问更快。 其他图片使用SMMS，免费额度可达5G。  1.ImgURL图床 控制台获取API Token  123API_URL &#x3D; &#x27;https:&#x2F;&#x2F;www.imgurl.org&#x2F;api&#x2F;v2&#x2F;upload&#x27;UID &#x3D; &#x27;xxxxxxxxxxxxxxxxxxxx&#x27;Token &#x3D; &#x27;xxxxxx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python免费图床上传">
+<meta property="og:url" content="http://example.com/2024/10/02/Python%E5%9B%BE%E5%BA%8A%E4%B8%8A%E4%BC%A0/index.html">
+<meta property="og:site_name" content="Sarya🧊">
+<meta property="og:description" content="随机图片API使用ImgURL，免费额度1G，国内访问更快。 其他图片使用SMMS，免费额度可达5G。  1.ImgURL图床 控制台获取API Token  123API_URL &#x3D; &#x27;https:&#x2F;&#x2F;www.imgurl.org&#x2F;api&#x2F;v2&#x2F;upload&#x27;UID &#x3D; &#x27;xxxxxxxxxxxxxxxxxxxx&#x27;Token &#x3D; &#x27;xxxxxx">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2024/09/13/219bb0f310cd17f7.png">
+<meta property="article:published_time" content="2024-10-01T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-10-02T15:01:58.830Z">
+<meta property="article:author" content="Sarya">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="图床">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s3.bmp.ovh/imgs/2024/09/13/219bb0f310cd17f7.png"><link rel="shortcut icon" href="https://s2.loli.net/2024/09/27/Dch6ZAdES1luaWQ.jpg"><link rel="canonical" href="http://example.com/2024/10/02/Python%E5%9B%BE%E5%BA%8A%E4%B8%8A%E4%BC%A0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Python免费图床上传',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-10-02 23:01:58'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/wave.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s3.bmp.ovh/imgs/2024/09/13/219bb0f310cd17f7.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">18</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://saryak.github.io"><i class="fa-fw fa fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-puzzle-piece"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://cloud.mostart.site"><i class="fa-fw fa fa-folder-open"></i><span> 资源</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-envelope"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://chat.mostart.site"><i class="fa-fw fa fa-robot"></i><span> 机器人</span></a></div><div class="menus_item"><a class="site-page" href="/laboratory/"><i class="fa-fw fa fa-server"></i><span> 实验室</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Sarya🧊"><span class="site-name">Sarya🧊</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://saryak.github.io"><i class="fa-fw fa fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-puzzle-piece"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://cloud.mostart.site"><i class="fa-fw fa fa-folder-open"></i><span> 资源</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-envelope"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://chat.mostart.site"><i class="fa-fw fa fa-robot"></i><span> 机器人</span></a></div><div class="menus_item"><a class="site-page" href="/laboratory/"><i class="fa-fw fa fa-server"></i><span> 实验室</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Python免费图床上传</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-01T16:00:00.000Z" title="发表于 2024-10-02 00:00:00">2024-10-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-02T15:01:58.830Z" title="更新于 2024-10-02 23:01:58">2024-10-02</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Python免费图床上传"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>随机图片API使用ImgURL，免费额度1G，国内访问更快。</p>
+<p>其他图片使用SMMS，免费额度可达5G。</p>
+</blockquote>
+<h3 id="1-ImgURL图床"><a href="#1-ImgURL图床" class="headerlink" title="1.ImgURL图床"></a>1.ImgURL图床</h3><blockquote>
+<p>控制台获取API Token</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">API_URL = &#x27;https://www.imgurl.org/api/v2/upload&#x27;</span><br><span class="line">UID = &#x27;xxxxxxxxxxxxxxxxxxxx&#x27;</span><br><span class="line">Token = &#x27;xxxxxxxxxxxxxxxxxxxx&#x27;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>上传接口</p>
+</blockquote>
+<p>参考官方文档<a target="_blank" rel="noopener" href="https://doc.xiaoz.org/books/imgurl-pro/page/api#google_vignette">上传API | 藏经阁 (xiaoz.org)</a></p>
+<ul>
+<li>接口地址：<a target="_blank" rel="noopener" href="https://www.imgurl.org/api/v2/upload">https://www.imgurl.org/api/v2/upload</a></li>
+<li>请求类型：POST</li>
+</ul>
+<p><strong>请求参数</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th><strong>参数名</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>是否必须</strong></th>
+<th><strong>参数说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>file</td>
+<td>file</td>
+<td>是</td>
+<td>支持jpg/jgeg/png/gif/bmp/webp格式</td>
+</tr>
+<tr>
+<td>uid</td>
+<td>string</td>
+<td>是</td>
+<td>通过ImgURL后台获取</td>
+</tr>
+<tr>
+<td>token</td>
+<td>string</td>
+<td>是</td>
+<td>通过ImgURL后台获取</td>
+</tr>
+<tr>
+<td>album_id</td>
+<td>int</td>
+<td>否</td>
+<td>相册ID</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>返回值</strong></p>
+<p>如果请求成功，返回结果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 200,</span><br><span class="line">    &quot;msg&quot;: &quot;&quot;,</span><br><span class="line">    &quot;data&quot;:</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;relative_path&quot;: &quot;imgs\/2022\/03\/30\/f4a2eeb2689f9c19.jpg&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;https:\/\/s3.bmp.ovh\/imgs\/2022\/03\/30\/f4a2eeb2689f9c19.jpg&quot;,</span><br><span class="line">        &quot;thumbnail_url&quot;: &quot;https:\/\/s3.bmp.ovh\/imgs\/2022\/03\/30\/f4a2eeb2689f9c19_thumb.jpg&quot;,</span><br><span class="line">        &quot;image_width&quot;: 1080,</span><br><span class="line">        &quot;image_height&quot;: 810,</span><br><span class="line">        &quot;client_name&quot;: &quot;sanc1.jpg&quot;,</span><br><span class="line">        &quot;id&quot;: 1221739,</span><br><span class="line">        &quot;imgid&quot;: &quot;f4a2eeb2689f9c19&quot;,</span><br><span class="line">        &quot;delete&quot;: &quot;https:\/\/imgurl.org\/delete\/649cbe0133f7ef95&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th><strong>参数名</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>参数说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>int</td>
+<td>状态码，200：成功，-1000：失败</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>如果成功返回空，如果失败则返回错误信息</td>
+</tr>
+<tr>
+<td>data</td>
+<td>int</td>
+<td>图像数据，各参数含义如下</td>
+</tr>
+<tr>
+<td>data.relative_path</td>
+<td>string</td>
+<td>图片相对路径</td>
+</tr>
+<tr>
+<td>data.url</td>
+<td>string</td>
+<td>图片URL地址</td>
+</tr>
+<tr>
+<td>data.thumbnail_url</td>
+<td>string</td>
+<td>图片缩略图URL，如果没有生成缩略图，则和<code>data.url</code>地址相同</td>
+</tr>
+<tr>
+<td>data.image_width</td>
+<td>float</td>
+<td>图片宽</td>
+</tr>
+<tr>
+<td>data.image_height</td>
+<td>int</td>
+<td>图片高</td>
+</tr>
+<tr>
+<td>data.client_name</td>
+<td>string</td>
+<td>图片原始名称</td>
+</tr>
+<tr>
+<td>data.id</td>
+<td>int</td>
+<td>图片序号</td>
+</tr>
+<tr>
+<td>data.imgid</td>
+<td>string(16)</td>
+<td>图片唯一ID</td>
+</tr>
+<tr>
+<td>data.delete</td>
+<td>string</td>
+<td>图片删除地址，访问改地址图片将被删除</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>如果失败，返回结果为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: -1000,</span><br><span class="line">    &quot;msg&quot;: &quot;上传失败，错误原因：The file you are attempting to upload is larger than the permitted size.&quot;,</span><br><span class="line">    &quot;data&quot;: &quot;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>code</code>: 状态码，失败时固定返回<code>-1000</code></li>
+<li><code>msg</code>: 失败原因</li>
+<li><code>data</code>: 失败时固定返回空</li>
+</ul>
+<blockquote>
+<p>Python调用API</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">def upload(filename):</span><br><span class="line">    url = &quot;https://www.imgurl.org/api/v2/upload&quot;</span><br><span class="line">    files = &#123;&#x27;file&#x27;: open(filename, &#x27;rb&#x27;)&#125;</span><br><span class="line">    data = &#123;&#x27;uid&#x27;: uid, &#x27;token&#x27;: token&#125;</span><br><span class="line">    headers = &#123;&#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203&#x27;&#125;</span><br><span class="line">    response = requests.post(url, files=files, data=data, headers=headers)</span><br><span class="line">    if response.status_code == 200:</span><br><span class="line">        json_data = response.json()</span><br><span class="line">        return json_data[&#x27;data&#x27;][&#x27;url&#x27;]</span><br><span class="line">    else:</span><br><span class="line">        return &#x27;&#x27;</span><br><span class="line"></span><br><span class="line">upload(&#x27;./imgs/Amiya.600.4004619.webp&#x27;)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>多个账号上传</p>
+</blockquote>
+<p>准备5个ImgURL账号，免费额度可达5GB，每日可免费上传50张图片。代码包含处理文件名称、压缩文件。</p>
+<p><strong>文件重命名</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line">from datetime import datetime</span><br><span class="line"></span><br><span class="line">folder_path = &#x27;imgs&#x27;</span><br><span class="line">current_time = datetime.now().strftime(&#x27;%Y%m%d%H%M%S&#x27;)</span><br><span class="line">for index, filename in enumerate(os.listdir(folder_path)):</span><br><span class="line">    file_extension = os.path.splitext(filename)[1]</span><br><span class="line">    new_filename = f&quot;&#123;current_time&#125;&#123;index + 1&#125;&#123;file_extension&#125;&quot;</span><br><span class="line">    old_file_path = os.path.join(folder_path, filename)</span><br><span class="line">    new_file_path = os.path.join(folder_path, new_filename)</span><br><span class="line">    os.rename(old_file_path, new_file_path)</span><br><span class="line">    </span><br><span class="line">print(&quot;重命名完成！&quot;)</span><br></pre></td></tr></table></figure>
+<p><strong>文件压缩</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line">from PIL import Image</span><br><span class="line">from multiprocessing import Pool</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">ext = &#x27;webp&#x27;</span><br><span class="line">input_dir = &#x27;./imgs&#x27;</span><br><span class="line">output_dir = &#x27;./outImgs&#x27;</span><br><span class="line"></span><br><span class="line"># 压缩后的目标文件大小（单位MB转换为KB）</span><br><span class="line">target_size = 1 * 1024  # 1MB = 1024KB</span><br><span class="line"></span><br><span class="line"># 创建输出目录（如果不存在）</span><br><span class="line">os.makedirs(output_dir, exist_ok=True)</span><br><span class="line"></span><br><span class="line"># 压缩文件</span><br><span class="line">def compress_image(args):</span><br><span class="line">    input_path, output_path = args</span><br><span class="line">    try:</span><br><span class="line">        # 打开图片并转换为RGB</span><br><span class="line">        img = Image.open(input_path).convert(&#x27;RGB&#x27;)</span><br><span class="line">        begin_size = os.path.getsize(input_path) / 1024  # 转换为KB</span><br><span class="line"></span><br><span class="line">        min_quality = 20</span><br><span class="line">        max_quality = 100</span><br><span class="line">        best_quality = max_quality</span><br><span class="line"></span><br><span class="line">        # 二分法查找最佳质量</span><br><span class="line">        while min_quality &lt;= max_quality:</span><br><span class="line">            quality = (min_quality + max_quality) // 2</span><br><span class="line">            img.save(output_path, ext, quality=quality)</span><br><span class="line">            size = os.path.getsize(output_path) / 1024  # 获取压缩后大小 (KB)</span><br><span class="line"></span><br><span class="line">            if size &lt;= target_size:</span><br><span class="line">                best_quality = quality</span><br><span class="line">                min_quality = quality + 1</span><br><span class="line">            else:</span><br><span class="line">                max_quality = quality - 1</span><br><span class="line"></span><br><span class="line">        # 使用找到的最佳质量保存最终图片</span><br><span class="line">        img.save(output_path, ext, quality=best_quality)</span><br><span class="line">        print(f&quot;&#123;input_path&#125; 压缩完成，最佳质量: &#123;best_quality&#125;, 初始大小: &#123;begin_size&#125; KB, 压缩后大小: &#123;os.path.getsize(output_path) / 1024&#125; KB&quot;)</span><br><span class="line"></span><br><span class="line">    except Exception as e:</span><br><span class="line">        print(f&quot;Error processing &#123;input_path&#125;: &#123;e&#125;&quot;)</span><br><span class="line"></span><br><span class="line"># 处理文件路径</span><br><span class="line">def process_images(input_dir, output_dir):</span><br><span class="line">    img_list = []</span><br><span class="line">    for root, _, files in os.walk(input_dir):</span><br><span class="line">        for file in files:</span><br><span class="line">            if file.lower().endswith((&#x27;.jpg&#x27;, &#x27;.jpeg&#x27;, &#x27;.png&#x27;, &#x27;.bmp&#x27;, &#x27;.tiff&#x27;)):</span><br><span class="line">                input_path = os.path.join(root, file)</span><br><span class="line">                output_path = os.path.join(output_dir, os.path.splitext(file)[0] + f&#x27;.&#123;ext&#125;&#x27;)</span><br><span class="line">                img_list.append((input_path, output_path))</span><br><span class="line"></span><br><span class="line">    return img_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    # 处理图像并获取需要压缩的图像列表</span><br><span class="line">    img_list = process_images(input_dir, output_dir)</span><br><span class="line">    print(f&quot;&lt;--需要压缩的图片数量：&#123;len(img_list)&#125;--&gt;&quot;)</span><br><span class="line"></span><br><span class="line">    # 使用多进程进行图像压缩</span><br><span class="line">    if img_list:</span><br><span class="line">        with Pool(processes=6) as pool:</span><br><span class="line">            pool.map(compress_image, img_list)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    time_start = time.time()</span><br><span class="line">    main()</span><br><span class="line">    time_end = time.time()</span><br><span class="line">    print(f&quot;&lt;--压缩花费时间: &#123;time_end - time_start&#125; 秒--&gt;&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;--需要压缩的图片数量：21--&gt;</span><br><span class="line">./imgs\Amiya.full.3144075.jpg 压缩完成，最佳质量: 100, 初始大小: 725.63671875 KB, 压缩后大小: 541.78125 KB</span><br><span class="line">./imgs\Amiya.full.3316699.jpg 压缩完成，最佳质量: 100, 初始大小: 2404.8994140625 KB, 压缩后大小: 658.7421875 KB</span><br><span class="line">./imgs\Amiya.full.3009010.jpg 压缩完成，最佳质量: 100, 初始大小: 695.3994140625 KB, 压缩后大小: 659.728515625 KB</span><br><span class="line">./imgs\Amiya.full.3294755.jpg 压缩完成，最佳质量: 100, 初始大小: 1184.25 KB, 压缩后大小: 362.04296875 KB</span><br><span class="line">./imgs\Amiya.full.3298332.png 压缩完成，最佳质量: 91, 初始大小: 9591.7373046875 KB, 压缩后大小: 1002.310546875 KB</span><br><span class="line">./imgs\Amiya.full.3565504.png 压缩完成，最佳质量: 97, 初始大小: 6383.5009765625 KB, 压缩后大小: 946.892578125 KB</span><br><span class="line">./imgs\Amiya.full.3291875.jpg 压缩完成，最佳质量: 88, 初始大小: 1511.8369140625 KB, 压缩后大小: 997.0078125 KB</span><br><span class="line">./imgs\Amiya.full.3826866.png 压缩完成，最佳质量: 100, 初始大小: 4698.671875 KB, 压缩后大小: 646.2265625 KB</span><br><span class="line">./imgs\Amiya.full.3511874.png 压缩完成，最佳质量: 97, 初始大小: 6105.0869140625 KB, 压缩后大小: 915.767578125 KB</span><br><span class="line">./imgs\Amiya.full.4014243.jpg 压缩完成，最佳质量: 100, 初始大小: 483.650390625 KB, 压缩后大小: 485.38671875 KB</span><br><span class="line">./imgs\Arknights.full.3189208.jpg 压缩完成，最佳质量: 100, 初始大小: 1267.4140625 KB, 压缩后大小: 601.98828125 KB</span><br><span class="line">./imgs\Arknights.full.3496510.jpg 压缩完成，最佳质量: 100, 初始大小: 910.0693359375 KB, 压缩后大小: 454.9375 KB</span><br><span class="line">./imgs\Amiya.full.3995628.jpg 压缩完成，最佳质量: 100, 初始大小: 548.271484375 KB, 压缩后大小: 567.994140625 KB</span><br><span class="line">./imgs\Arknights.full.3284783.jpg 压缩完成，最佳质量: 89, 初始大小: 3484.7158203125 KB, 压缩后大小: 1011.671875 KB</span><br><span class="line">./imgs\Arknights.full.2822966.jpg 压缩完成，最佳质量: 89, 初始大小: 1302.3291015625 KB, 压缩后大小: 1018.123046875 KB</span><br><span class="line">./imgs\Arknights.full.3639096.jpg 压缩完成，最佳质量: 89, 初始大小: 2210.2890625 KB, 压缩后大小: 961.212890625 KB</span><br><span class="line">./imgs\Arknights.full.3792012.jpg 压缩完成，最佳质量: 79, 初始大小: 6603.189453125 KB, 压缩后大小: 944.962890625 KB</span><br><span class="line">./imgs\Arknights.full.3976234.png 压缩完成，最佳质量: 83, 初始大小: 27146.6298828125 KB, 压缩后大小: 932.150390625 KB</span><br><span class="line">./imgs\Arknights.full.3589755.jpg 压缩完成，最佳质量: 81, 初始大小: 1717.4169921875 KB, 压缩后大小: 1010.162109375 KB</span><br><span class="line">./imgs\Arknights.full.3642326.jpg 压缩完成，最佳质量: 58, 初始大小: 8437.51953125 KB, 压缩后大小: 1016.517578125 KB</span><br><span class="line">./imgs\Arknights.full.3789533.jpg 压缩完成，最佳质量: 79, 初始大小: 17130.6591796875 KB, 压缩后大小: 985.49609375 KB</span><br><span class="line">&lt;--压缩花费时间: 38.252418756484985 秒--&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>多账号轮流上传</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line"></span><br><span class="line"># 账号的UID和Token</span><br><span class="line">accounts = [</span><br><span class="line">    &#123;&quot;UID&quot;: &quot;exampleUID1&quot;, &quot;Token&quot;: &quot;exampleToken1&quot;&#125;,</span><br><span class="line">    &#123;&quot;UID&quot;: &quot;exampleUID2&quot;, &quot;Token&quot;: &quot;exampleToken2&quot;&#125;,</span><br><span class="line">    &#123;&quot;UID&quot;: &quot;exampleUID3&quot;, &quot;Token&quot;: &quot;exampleToken3&quot;&#125;,</span><br><span class="line">    &#123;&quot;UID&quot;: &quot;exampleUID4&quot;, &quot;Token&quot;: &quot;exampleToken4&quot;&#125;,</span><br><span class="line">    &#123;&quot;UID&quot;: &quot;exampleUID5&quot;, &quot;Token&quot;: &quot;exampleToken5&quot;&#125;,</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"># 上传图片的API URL</span><br><span class="line">upload_url = &quot;https://www.imgurl.org/api/v2/upload&quot;</span><br><span class="line"></span><br><span class="line"># 轮询账号上传图片</span><br><span class="line">account_index = 0</span><br><span class="line">upload_count = &#123;account[&#x27;UID&#x27;]: 0 for account in accounts&#125;  # 每个账号上传计数</span><br><span class="line">output_txt_file = &quot;uploaded_urls.txt&quot;  # 存储上传URL的txt文件</span><br><span class="line"></span><br><span class="line">for filename in os.listdir(outImgs):</span><br><span class="line">    output_file_path = os.path.join(outImgs, filename)</span><br><span class="line"></span><br><span class="line">    # 检查是否所有账号的上传次数都达到10次</span><br><span class="line">    if all(count &gt;= 10 for count in upload_count.values()):</span><br><span class="line">        print(&quot;所有账号的上传次数都已达到限制（10次），停止上传。&quot;)</span><br><span class="line">        break  # 退出循环</span><br><span class="line"></span><br><span class="line">    # 循环查找有剩余上传次数的账号</span><br><span class="line">    while upload_count[accounts[account_index][&#x27;UID&#x27;]] &gt;= 10:</span><br><span class="line">        account_index = (account_index + 1) % len(accounts)  # 切换到下一个账号</span><br><span class="line"></span><br><span class="line">    # 获取当前可用的账号</span><br><span class="line">    account = accounts[account_index]</span><br><span class="line">    UID = account[&quot;UID&quot;]</span><br><span class="line">    Token = account[&quot;Token&quot;]</span><br><span class="line"></span><br><span class="line">    # 上传图片</span><br><span class="line">    img_url = upload(UID, Token, output_file_path)</span><br><span class="line">    if upload_url:</span><br><span class="line">        print(f&quot;图片 &#123;filename&#125; 上传成功，URL: &#123;img_url&#125;&quot;)</span><br><span class="line">        upload_count[UID] += 1  # 增加该账号的上传计数</span><br><span class="line"></span><br><span class="line">        # 保存上传成功的URL到txt文件</span><br><span class="line">        with open(output_txt_file, &quot;a&quot;) as f:</span><br><span class="line">            f.write(f&quot;&#123;filename&#125;: &#123;img_url&#125;\n&quot;)</span><br><span class="line"></span><br><span class="line">        # 删除已成功上传的图片</span><br><span class="line">        os.remove(output_file_path)</span><br><span class="line">    else:</span><br><span class="line">        print(f&quot;图片 &#123;filename&#125; 上传失败&quot;)</span><br><span class="line"></span><br><span class="line">    # 切换到下一个账号</span><br><span class="line">    account_index = (account_index + 1) % len(accounts)</span><br></pre></td></tr></table></figure>
+<p><strong>完整代码</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line">import os</span><br><span class="line">from PIL import Image</span><br><span class="line">from multiprocessing import Pool</span><br><span class="line">import time</span><br><span class="line">from datetime import datetime</span><br><span class="line">import json</span><br><span class="line"></span><br><span class="line"># 账号的UID和Token</span><br><span class="line">accounts = [</span><br><span class="line">    &#123;&quot;UID&quot;: &quot;exampleUID1&quot;, &quot;Token&quot;: &quot;exampleToken1&quot;&#125;,</span><br><span class="line">    &#123;&quot;UID&quot;: &quot;exampleUID2&quot;, &quot;Token&quot;: &quot;exampleToken2&quot;&#125;,</span><br><span class="line">    &#123;&quot;UID&quot;: &quot;exampleUID3&quot;, &quot;Token&quot;: &quot;exampleToken3&quot;&#125;,</span><br><span class="line">    &#123;&quot;UID&quot;: &quot;exampleUID4&quot;, &quot;Token&quot;: &quot;exampleToken4&quot;&#125;,</span><br><span class="line">    &#123;&quot;UID&quot;: &quot;exampleUID5&quot;, &quot;Token&quot;: &quot;exampleToken5&quot;&#125;,</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"># 上传图片的API URL</span><br><span class="line">upload_url = &quot;https://www.imgurl.org/api/v2/upload&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ext = &#x27;webp&#x27;</span><br><span class="line">input_dir = &#x27;./imgs&#x27;</span><br><span class="line">output_dir = &#x27;./outImgs&#x27;</span><br><span class="line">count_text =&#x27;./count.txt&#x27;</span><br><span class="line"></span><br><span class="line"># 压缩后的目标文件大小（单位MB转换为KB）</span><br><span class="line">target_size = 1 * 1024  # 1MB = 1024KB</span><br><span class="line"></span><br><span class="line"># 创建输出目录（如果不存在）</span><br><span class="line">os.makedirs(output_dir, exist_ok=True)</span><br><span class="line"></span><br><span class="line">def rename(folder_path):</span><br><span class="line">    current_time = datetime.now().strftime(&#x27;%Y%m%d%H%M%S&#x27;)</span><br><span class="line">    for index, filename in enumerate(os.listdir(folder_path)):</span><br><span class="line">        file_extension = os.path.splitext(filename)[1]</span><br><span class="line">        new_filename = f&quot;&#123;current_time&#125;&#123;index + 1&#125;&#123;file_extension&#125;&quot;</span><br><span class="line">        old_file_path = os.path.join(folder_path, filename)</span><br><span class="line">        new_file_path = os.path.join(folder_path, new_filename)</span><br><span class="line">        os.rename(old_file_path, new_file_path)</span><br><span class="line"></span><br><span class="line">def compress_image(args):</span><br><span class="line">    input_path, output_path = args</span><br><span class="line">    try:</span><br><span class="line">        # 打开图片并转换为RGB</span><br><span class="line">        img = Image.open(input_path).convert(&#x27;RGB&#x27;)</span><br><span class="line">        begin_size = os.path.getsize(input_path) / 1024  # 转换为KB</span><br><span class="line"></span><br><span class="line">        min_quality = 20</span><br><span class="line">        max_quality = 100</span><br><span class="line">        best_quality = max_quality</span><br><span class="line"></span><br><span class="line">        # 二分法查找最佳质量</span><br><span class="line">        while min_quality &lt;= max_quality:</span><br><span class="line">            quality = (min_quality + max_quality) // 2</span><br><span class="line">            img.save(output_path, ext, quality=quality)</span><br><span class="line">            size = os.path.getsize(output_path) / 1024  # 获取压缩后大小 (KB)</span><br><span class="line"></span><br><span class="line">            if size &lt;= target_size:</span><br><span class="line">                best_quality = quality</span><br><span class="line">                min_quality = quality + 1</span><br><span class="line">            else:</span><br><span class="line">                max_quality = quality - 1</span><br><span class="line"></span><br><span class="line">        # 使用找到的最佳质量保存最终图片</span><br><span class="line">        img.save(output_path, ext, quality=best_quality)</span><br><span class="line">        print(f&quot;&#123;input_path&#125; 压缩完成，最佳质量: &#123;best_quality&#125;, 初始大小: &#123;begin_size&#125; KB, 压缩后大小: &#123;os.path.getsize(output_path) / 1024&#125; KB&quot;)</span><br><span class="line"></span><br><span class="line">    except Exception as e:</span><br><span class="line">        print(f&quot;Error processing &#123;input_path&#125;: &#123;e&#125;&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def process_images(input_dir, output_dir):</span><br><span class="line">    img_list = []</span><br><span class="line">    for root, _, files in os.walk(input_dir):</span><br><span class="line">        for file in files:</span><br><span class="line">            if file.lower().endswith((&#x27;.jpg&#x27;, &#x27;.jpeg&#x27;, &#x27;.png&#x27;, &#x27;.bmp&#x27;, &#x27;.tiff&#x27;)):</span><br><span class="line">                input_path = os.path.join(root, file)</span><br><span class="line">                output_path = os.path.join(output_dir, os.path.splitext(file)[0] + f&#x27;.&#123;ext&#125;&#x27;)</span><br><span class="line">                img_list.append((input_path, output_path))</span><br><span class="line"></span><br><span class="line">    return img_list</span><br><span class="line"></span><br><span class="line">def upload(UID, Token, filename):</span><br><span class="line">    url = &quot;https://www.imgurl.org/api/v2/upload&quot;</span><br><span class="line">    files = &#123;&#x27;file&#x27;: open(filename, &#x27;rb&#x27;)&#125;</span><br><span class="line">    data = &#123;&#x27;uid&#x27;: UID, &#x27;token&#x27;: Token&#125;</span><br><span class="line">    headers = &#123;&#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203&#x27;&#125;</span><br><span class="line">    response = requests.post(url, files=files, data=data, headers=headers)</span><br><span class="line">    if response.status_code == 200:</span><br><span class="line">        json_data = response.json()</span><br><span class="line">        return json_data[&#x27;data&#x27;][&#x27;url&#x27;]</span><br><span class="line">    else:</span><br><span class="line">        return &#x27;&#x27;</span><br><span class="line"></span><br><span class="line">def multAccountUpload(upload_count):</span><br><span class="line">    account_index = 0</span><br><span class="line">    output_txt_file = &quot;img_list.txt&quot;  # 存储上传URL的txt文件</span><br><span class="line"></span><br><span class="line">    for filename in os.listdir(output_dir):</span><br><span class="line">        output_file_path = os.path.join(output_dir, filename)</span><br><span class="line"></span><br><span class="line">        # 检查是否所有账号的上传次数都达到10次</span><br><span class="line">        if all(count &gt;= 10 for count in upload_count.values()):</span><br><span class="line">            print(&quot;所有账号的上传次数都已达到限制（10次），停止上传。&quot;)</span><br><span class="line">            break  # 退出循环</span><br><span class="line"></span><br><span class="line">        # 循环查找有剩余上传次数的账号</span><br><span class="line">        while upload_count[accounts[account_index][&#x27;UID&#x27;]] &gt;= 10:</span><br><span class="line">            account_index = (account_index + 1) % len(accounts)  # 切换到下一个账号</span><br><span class="line"></span><br><span class="line">        # 获取当前可用的账号</span><br><span class="line">        account = accounts[account_index]</span><br><span class="line">        UID = account[&quot;UID&quot;]</span><br><span class="line">        Token = account[&quot;Token&quot;]</span><br><span class="line"></span><br><span class="line">        # 上传图片</span><br><span class="line">        img_url = upload(UID, Token, output_file_path)</span><br><span class="line">        if upload_url:</span><br><span class="line">            print(f&quot;图片 &#123;filename&#125; 上传成功，URL: &#123;img_url&#125;&quot;)</span><br><span class="line">            upload_count[UID] += 1  # 增加该账号的上传计数</span><br><span class="line"></span><br><span class="line">            # 保存上传成功的URL到txt文件</span><br><span class="line">            with open(output_txt_file, &quot;a&quot;) as f:</span><br><span class="line">                f.write(f&quot;\&quot;&#123;img_url&#125;\&quot;,\n&quot;)</span><br><span class="line"></span><br><span class="line">            # 删除已成功上传的图片</span><br><span class="line">            os.remove(output_file_path)</span><br><span class="line">        else:</span><br><span class="line">            print(f&quot;图片 &#123;filename&#125; 上传失败&quot;)</span><br><span class="line"></span><br><span class="line">        # 切换到下一个账号</span><br><span class="line">        account_index = (account_index + 1) % len(accounts)</span><br><span class="line"></span><br><span class="line">        # 保存上传计数和当前日期</span><br><span class="line">        save_count_data(upload_count, current_date)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def load_count_data():</span><br><span class="line">    # 如果文件存在，加载上传数据；否则创建文件并返回初始数据</span><br><span class="line">    if os.path.exists(count_text):</span><br><span class="line">        with open(count_text, &#x27;r&#x27;, encoding=&#x27;UTF-8&#x27;) as fp:</span><br><span class="line">            return json.load(fp)</span><br><span class="line">    else:</span><br><span class="line">        init_data = &#123;&#x27;upload_count&#x27;: &#123;&#125;, &#x27;date&#x27;: &#x27;&#x27;&#125;</span><br><span class="line">        with open(count_text, &#x27;w&#x27;, encoding=&#x27;UTF-8&#x27;) as fp:</span><br><span class="line">            json.dump(init_data, fp)</span><br><span class="line">            return init_data</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def save_count_data(upload_count, date):</span><br><span class="line">    data = &#123;&#x27;upload_count&#x27;: upload_count, &#x27;date&#x27;: date&#125;</span><br><span class="line">    with open(count_text, &#x27;w&#x27;, encoding=&quot;UTF-8&quot;) as fp:</span><br><span class="line">        json.dump(data, fp)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &#x27;__main__&#x27;:</span><br><span class="line">    # 读取上传次数</span><br><span class="line">    upload_data = load_count_data()</span><br><span class="line">    saved_date = upload_data.get(&#x27;date&#x27;, &#x27;&#x27;)</span><br><span class="line">    upload_count = upload_data.get(&#x27;upload_count&#x27;, &#123;account[&#x27;UID&#x27;]: 0 for account in accounts&#125;)</span><br><span class="line"></span><br><span class="line">    # 如果是前一天的数据，刷新计数</span><br><span class="line">    current_date = datetime.now().strftime(&#x27;%Y-%m-%d&#x27;)</span><br><span class="line">    if saved_date != current_date:</span><br><span class="line">        upload_count = &#123;account[&#x27;UID&#x27;]: 0 for account in accounts&#125;  # 重置计数</span><br><span class="line"></span><br><span class="line">    # 重命名文件</span><br><span class="line">    rename(input_dir)</span><br><span class="line"></span><br><span class="line">    # 处理图像并获取需要压缩的图像列表</span><br><span class="line">    img_list = process_images(input_dir, output_dir)</span><br><span class="line">    print(f&quot;&lt;--需要压缩的图片数量：&#123;len(img_list)&#125;--&gt;&quot;)</span><br><span class="line"></span><br><span class="line">    # 使用多进程进行图像压缩</span><br><span class="line">    time_start = time.time()</span><br><span class="line">    if img_list:</span><br><span class="line">        with Pool(processes=6) as pool:</span><br><span class="line">            pool.map(compress_image, img_list)</span><br><span class="line">    time_end = time.time()</span><br><span class="line">    print(f&quot;&lt;--压缩花费时间: &#123;time_end - time_start&#125; 秒--&gt;&quot;)</span><br><span class="line"></span><br><span class="line">    # 轮询账号上传图片</span><br><span class="line">    time_start = time.time()</span><br><span class="line">    multAccountUpload(upload_count)</span><br><span class="line">    time_end = time.time()</span><br><span class="line">    print(f&quot;&lt;--上传花费时间: &#123;time_end - time_start&#125; 秒--&gt;&quot;)</span><br></pre></td></tr></table></figure>
+<h3 id="2-SMMS图床"><a href="#2-SMMS图床" class="headerlink" title="2.SMMS图床"></a>2.SMMS图床</h3></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Sarya</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/10/02/Python%E5%9B%BE%E5%BA%8A%E4%B8%8A%E4%BC%A0/">http://example.com/2024/10/02/Python%E5%9B%BE%E5%BA%8A%E4%B8%8A%E4%BC%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Sarya🧊</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Python/">Python</a><a class="post-meta__tags" href="/tags/%E5%9B%BE%E5%BA%8A/">图床</a></div><div class="post_share"><div class="social-share" data-image="https://s3.bmp.ovh/imgs/2024/09/13/219bb0f310cd17f7.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/10/01/Hexo%E6%B5%8B%E8%AF%95/" title="Hexo测试"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hexo测试</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s3.bmp.ovh/imgs/2024/09/13/219bb0f310cd17f7.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Sarya</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">18</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.baidu.com"><i class="fa fa-heartbeat"></i><span>Chat With Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是我的博客！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-ImgURL%E5%9B%BE%E5%BA%8A"><span class="toc-text">1.ImgURL图床</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-SMMS%E5%9B%BE%E5%BA%8A"><span class="toc-text">2.SMMS图床</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/02/Python%E5%9B%BE%E5%BA%8A%E4%B8%8A%E4%BC%A0/" title="Python免费图床上传">Python免费图床上传</a><time datetime="2024-10-01T16:00:00.000Z" title="发表于 2024-10-02 00:00:00">2024-10-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/Hexo%E6%B5%8B%E8%AF%95/" title="Hexo测试">Hexo测试</a><time datetime="2024-09-30T16:00:00.000Z" title="发表于 2024-10-01 00:00:00">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/Hexo%E9%AD%94%E6%94%B9%E5%90%88%E9%9B%86/" title="Hexo魔改合集">Hexo魔改合集</a><time datetime="2024-09-30T16:00:00.000Z" title="发表于 2024-10-01 00:00:00">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/Markdown%E8%AF%AD%E6%B3%95%E4%B8%8E%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE%E5%86%99%E6%B3%95%E6%B1%87%E6%80%BB/" title="Markdown语法与外挂标签写法汇总">Markdown语法与外挂标签写法汇总</a><time datetime="2024-09-30T16:00:00.000Z" title="发表于 2024-10-01 00:00:00">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/npm/" title="npm">npm</a><time datetime="2024-09-30T16:00:00.000Z" title="发表于 2024-10-01 00:00:00">2024-10-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Sarya</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script></div><script src="/js/botton.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
