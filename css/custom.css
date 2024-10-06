@@ -135,19 +135,91 @@ img {
 }
 
 /* 标题样式修改 */
+/* h2 {
+  text-indent: 1ch;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    opacity: 0.3;
+    background: linear-gradient(to right,
+        rgb(187, 80, 159),
+        #22467e00);
+  }
+
+  &:before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(187, 80, 159), rgba(255, 255, 255, 0));
+  }
+} */
+
 h2 {
-  background-color: rgba(255, 182, 193, 0.4);
-  color: rgba(38, 45, 116, 0.7);
-  border-radius: 10px;
-  padding: 5px;
+  position: relative;
+  padding-left: 25px;
+  margin: 20px 0;
+  font-weight: bold;
 }
+
+h2::after {
+  content: " ";
+  width: 8px;
+  height: 40px;
+  background: #12a3f5;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  box-shadow: 0 5px 20px rgba(78, 163, 233, 0.7);
+}
+
 
 h3 {
-  background-color: rgba(173, 216, 230, 0.4);
-  border-radius: 10px;
-  padding: 10px;
+  text-indent: 1ch;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    opacity: 0.3;
+    background: linear-gradient(to right,
+        rgb(78, 163, 233),
+        #22467e00);
+  }
+
+  &:before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(78, 163, 233), rgba(255, 255, 255, 0));
+  }
 }
 
+h2:hover,
+h3:hover {
+  color: #12a3f5;
+  text-shadow: 0 0 10px rgba(18, 163, 245, 0.7);
+  transform: scale(1.01);
+}
 
 /* 鼠标悬停卡片的样式 */
 .recent-post-item:hover {
@@ -156,4 +228,14 @@ h3 {
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.4), 0 0 30px rgba(0, 123, 255, 0.3) !important;
   /* 粉光 */
   /* box-shadow: 0 0 15px rgba(255, 182, 193, 0.4), 0 0 30px rgba(255, 182, 193, 0.3) !important; */
+}
+
+/* 日汉字上面显示平假名的大小 */
+ruby rt {
+  font-size: 0.8em;
+}
+
+/* 代码块 */
+code {
+  color: green !important;
 }
