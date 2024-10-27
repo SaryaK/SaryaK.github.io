@@ -135,35 +135,6 @@ img {
 }
 
 /* 标题样式修改 */
-/* h2 {
-  text-indent: 1ch;
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    width: 180px;
-    height: 100%;
-    opacity: 0.3;
-    background: linear-gradient(to right,
-        rgb(187, 80, 159),
-        #22467e00);
-  }
-
-  &:before {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(to right, rgb(187, 80, 159), rgba(255, 255, 255, 0));
-  }
-} */
-
 h2 {
   position: relative;
   padding-left: 25px;
@@ -175,17 +146,17 @@ h2::after {
   content: " ";
   width: 8px;
   height: 40px;
-  background: #12a3f5;
+  background: #7ed0ff;
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: 0 5px 20px rgba(78, 163, 233, 0.7);
 }
 
 
-h3 {
+/* h3 {
   text-indent: 1ch;
 
   &:after {
@@ -212,14 +183,9 @@ h3 {
     width: 100%;
     background: linear-gradient(to right, rgb(78, 163, 233), rgba(255, 255, 255, 0));
   }
-}
+} */
 
-h2:hover,
-h3:hover {
-  color: #12a3f5;
-  text-shadow: 0 0 10px rgba(18, 163, 245, 0.7);
-  transform: scale(1.01);
-}
+
 
 /* 鼠标悬停卡片的样式 */
 .recent-post-item:hover {
@@ -231,8 +197,8 @@ h3:hover {
 }
 
 /* 日汉字上面显示平假名的大小 */
-ruby rt {
-  font-size: 0.8em;
+rt {
+  font-size: 0.6em;
 }
 
 /* 代码块 */
