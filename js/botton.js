@@ -22,6 +22,11 @@ const images = [
     "https://s3.bmp.ovh/imgs/2024/10/05/8fe5f6125d9387f3.webp",
     "https://s3.bmp.ovh/imgs/2024/10/26/b7438c2f59a95e6f.webp",
     "https://s3.bmp.ovh/imgs/2024/10/26/5c1e38e61c9f1d65.webp",
+    "https://s3.bmp.ovh/imgs/2024/11/02/9fb60d849f110b18.webp",
+    "https://s3.bmp.ovh/imgs/2024/11/02/e74aa8f4f4df5db5.webp",
+    "https://s3.bmp.ovh/imgs/2024/11/02/c604ba197b578dbb.webp",
+    "https://s3.bmp.ovh/imgs/2024/11/02/9b00f761bd6d4d1c.webp",
+    "https://s3.bmp.ovh/imgs/2024/11/02/ea4cdff71a2efb0c.webp",
 
 ];
 /* 

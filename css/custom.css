@@ -156,37 +156,6 @@ h2::after {
 }
 
 
-/* h3 {
-  text-indent: 1ch;
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    width: 180px;
-    height: 100%;
-    opacity: 0.3;
-    background: linear-gradient(to right,
-        rgb(78, 163, 233),
-        #22467e00);
-  }
-
-  &:before {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(to right, rgb(78, 163, 233), rgba(255, 255, 255, 0));
-  }
-} */
-
-
-
 /* 鼠标悬停卡片的样式 */
 .recent-post-item:hover {
   transform: scale(1.02);
@@ -204,4 +173,11 @@ rt {
 /* 代码块 */
 code {
   color: green !important;
+}
+
+/* 分割线 */
+hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
