@@ -43,13 +43,3 @@ const images = [
 "https://s3.bmp.ovh/imgs/2024/10/05/3c46b952bfc7b9d2.webp",
 */
 
-function setRandomBackground() {
-    // 生成一个随机索引
-    const randomIndex = Math.floor(Math.random() * images.length);
-    // 获取body元素并设置随机背景图片
-    document.getElementById("page-header").style.backgroundImage = `url(${images[randomIndex]})`;
-}
-
-// 页面加载时自动设置随机背景图片
-window.onload = setRandomBackground;
-
