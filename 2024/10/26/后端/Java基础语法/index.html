@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Java基础语法 | Sarya</title><meta name="author" content="Sarya"><meta name="copyright" content="Sarya"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.HelloWorld12345public class Main &#123;    public static void main(String[] args) &#123;        System.out.println(&quot;Hello world!&quot;);    &#125;&#125; 2.数据类型 基本数据类型  long类型需要在数字后加上L、float类型需要">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Java基础语法 | Sarya</title><meta name="author" content="Sarya"><meta name="copyright" content="Sarya"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.HelloWorld 12345public class Main &#123;    public static void main(String[] args) &#123;        System.out.println(&quot;Hello world!&quot;);    &#125;&#125; 2.数据类型  基本数据类型  long类型需要在数字后加上L、float类型">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java基础语法">
 <meta property="og:url" content="http://www.mostart.site/2024/10/26/%E5%90%8E%E7%AB%AF/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html">
 <meta property="og:site_name" content="Sarya">
-<meta property="og:description" content="1.HelloWorld12345public class Main &#123;    public static void main(String[] args) &#123;        System.out.println(&quot;Hello world!&quot;);    &#125;&#125; 2.数据类型 基本数据类型  long类型需要在数字后加上L、float类型需要">
+<meta property="og:description" content="1.HelloWorld 12345public class Main &#123;    public static void main(String[] args) &#123;        System.out.println(&quot;Hello world!&quot;);    &#125;&#125; 2.数据类型  基本数据类型  long类型需要在数字后加上L、float类型">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s3.bmp.ovh/imgs/2024/10/20/1113cce94fab55fa.jpg">
 <meta property="article:published_time" content="2024-10-25T16:00:00.000Z">
@@ -175,29 +175,37 @@
     document.addEventListener('pjax:send', () => { preloader.initLoading() })
     document.addEventListener('pjax:complete', () => { preloader.endLoading() })
   }
-})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s3.bmp.ovh/imgs/2024/10/20/1113cce94fab55fa.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://saryak.github.io"><i class="fa-fw fa fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-puzzle-piece"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://cloud.mostart.site"><i class="fa-fw fa fa-folder-open"></i><span> 资源</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-envelope"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://chat.mostart.site"><i class="fa-fw fa fa-robot"></i><span> 机器人</span></a></div><div class="menus_item"><a class="site-page" href="/laboratory/"><i class="fa-fw fa fa-server"></i><span> 实验室</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Sarya"><span class="site-name">Sarya</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://saryak.github.io"><i class="fa-fw fa fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-puzzle-piece"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://cloud.mostart.site"><i class="fa-fw fa fa-folder-open"></i><span> 资源</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-envelope"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://chat.mostart.site"><i class="fa-fw fa fa-robot"></i><span> 机器人</span></a></div><div class="menus_item"><a class="site-page" href="/laboratory/"><i class="fa-fw fa fa-server"></i><span> 实验室</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Java基础语法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-25T16:00:00.000Z" title="发表于 2024-10-26 00:00:00">2024-10-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-27T07:25:53.578Z" title="更新于 2024-10-27 15:25:53">2024-10-27</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Java基础语法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="1-HelloWorld"><a href="#1-HelloWorld" class="headerlink" title="1.HelloWorld"></a>1.HelloWorld</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(&quot;Hello world!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2.数据类型"></a>2.数据类型</h3><blockquote>
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s3.bmp.ovh/imgs/2024/10/20/1113cce94fab55fa.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://saryak.github.io"><i class="fa-fw fa fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-puzzle-piece"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://cloud.mostart.site"><i class="fa-fw fa fa-folder-open"></i><span> 资源</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-envelope"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://chat.mostart.site"><i class="fa-fw fa fa-robot"></i><span> 机器人</span></a></div><div class="menus_item"><a class="site-page" href="/laboratory/"><i class="fa-fw fa fa-server"></i><span> 实验室</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Sarya"><span class="site-name">Sarya</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://saryak.github.io"><i class="fa-fw fa fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-puzzle-piece"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://cloud.mostart.site"><i class="fa-fw fa fa-folder-open"></i><span> 资源</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-envelope"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://chat.mostart.site"><i class="fa-fw fa fa-robot"></i><span> 机器人</span></a></div><div class="menus_item"><a class="site-page" href="/laboratory/"><i class="fa-fw fa fa-server"></i><span> 实验室</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Java基础语法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-25T16:00:00.000Z" title="发表于 2024-10-26 00:00:00">2024-10-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-27T07:25:53.578Z" title="更新于 2024-10-27 15:25:53">2024-10-27</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Java基础语法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="1-HelloWorld">1.HelloWorld</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(&quot;Hello world!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-数据类型">2.数据类型</h3>
+<blockquote>
 <p>基本数据类型</p>
 </blockquote>
 <p>long类型需要在数字后加上L、float类型需要在数字后加上F。</p>
 <ul>
-<li><p>整数（byte、short、int、long）</p>
+<li>
+<p>整数（byte、short、int、long）</p>
 </li>
-<li><p>浮点数（float、double）</p>
+<li>
+<p>浮点数（float、double）</p>
 </li>
-<li><p>字符（char）</p>
+<li>
+<p>字符（char）</p>
 </li>
-<li><p>布尔（boolean）</p>
+<li>
+<p>布尔（boolean）</p>
 </li>
 </ul>
 <blockquote>
 <p>引用数据类型</p>
 </blockquote>
-<h3 id="3-键盘输入"><a href="#3-键盘输入" class="headerlink" title="3.键盘输入"></a>3.键盘输入</h3><blockquote>
+<h3 id="3-键盘输入">3.键盘输入</h3>
+<blockquote>
 <p>导入包并实例化对象</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import java.util.Scanner;</span><br><span class="line">Scanner sc = new Scanner(System.in);</span><br><span class="line">int i = sc.nextInt();</span><br></pre></td></tr></table></figure>
-<h3 id="4-运算符"><a href="#4-运算符" class="headerlink" title="4.运算符"></a>4.运算符</h3><blockquote>
+<h3 id="4-运算符">4.运算符</h3>
+<blockquote>
 <p>目录：</p>
 <ul>
 <li>算数运算符</li>
@@ -209,7 +217,8 @@
 <li>运算符优先级</li>
 </ul>
 </blockquote>
-<h4 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h4><p>整数参与，计算只能得到整数。</p>
+<h4 id="算数运算符">算数运算符</h4>
+<p>整数参与，计算只能得到整数。</p>
 <p>小数参与计算，计算结果可能是不准确的。</p>
 <ul>
 <li>加减乘除取余（+、-、*、/、%）</li>
@@ -235,8 +244,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int age = 1;</span><br><span class="line">System.out.println(3.7 + &quot;abc&quot;); // 3.7abc</span><br><span class="line">System.out.println(&quot;abc&quot; + true); // abctrue</span><br><span class="line">System.out.println(&quot;中&quot; + &#x27;abc&#x27; + true); // 中abctrue</span><br><span class="line">System.out.println(&#x27;我的年龄是&#x27; + age); // 我的年龄是1</span><br><span class="line">System.out.println(&#x27;我的年龄是&#x27; + &quot;age&quot;); // 我的年龄是age</span><br><span class="line">System.out.println(1 + 2 + &quot;abc&quot; + 2 + 1); // 3abc21</span><br></pre></td></tr></table></figure>
 <p><strong>字符类型的“+”操作</strong></p>
 <p><code>字符+字符</code>或<code>字符+数字</code>时，会把字符通过ASCII码表查询到对应数字再进行相加。</p>
-<details class="toggle" ><summary class="toggle-button" style="">部分ASCII码表</summary><div class="toggle-content"><div class="table-container">
-<table>
+<details class="toggle" ><summary class="toggle-button" style="">部分ASCII码表</summary><div class="toggle-content"><table>
 <thead>
 <tr>
 <th style="text-align:center">十进制</th>
@@ -266,7 +274,7 @@
 </tr>
 <tr>
 <td style="text-align:center">34</td>
-<td style="text-align:center">“</td>
+<td style="text-align:center">&quot;</td>
 <td style="text-align:center">50</td>
 <td style="text-align:center">2</td>
 <td style="text-align:center">66</td>
@@ -306,7 +314,7 @@
 </tr>
 <tr>
 <td style="text-align:center">39</td>
-<td style="text-align:center">‘</td>
+<td style="text-align:center">’</td>
 <td style="text-align:center">55</td>
 <td style="text-align:center">7</td>
 <td style="text-align:center">71</td>
@@ -502,15 +510,16 @@
 <td style="text-align:center">111</td>
 <td style="text-align:center">o</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
-</div>
 </div></details>
 <p>一些例子</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(1 + &#x27;a&#x27;); // 98</span><br><span class="line">System.out.println(&#x27;a&#x27; + &quot;b&quot;); // ab</span><br></pre></td></tr></table></figure>
-<h4 id="自增自减运算符"><a href="#自增自减运算符" class="headerlink" title="自增自减运算符"></a>自增自减运算符</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        int x = 10;</span><br><span class="line">        int y = x++;</span><br><span class="line">        int z = ++x;</span><br><span class="line">        System.out.println(&quot;x:&quot; + x);</span><br><span class="line">        System.out.println(&quot;y:&quot; + y);</span><br><span class="line">        System.out.println(&quot;z:&quot; + z);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;--输出--&gt;</span><br><span class="line">x:12</span><br><span class="line">y:10</span><br><span class="line">z:12</span><br></pre></td></tr></table></figure>
-<h4 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h4><div class="table-container">
+<h4 id="自增自减运算符">自增自减运算符</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        int x = 10;</span><br><span class="line">        int y = x++;</span><br><span class="line">        int z = ++x;</span><br><span class="line">        System.out.println(&quot;x:&quot; + x);</span><br><span class="line">        System.out.println(&quot;y:&quot; + y);</span><br><span class="line">        System.out.println(&quot;z:&quot; + z);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;--输出--&gt;</span><br><span class="line">x:12</span><br><span class="line">y:10</span><br><span class="line">z:12</span><br></pre></td></tr></table></figure>
+<h4 id="赋值运算符">赋值运算符</h4>
 <table>
 <thead>
 <tr>
@@ -552,9 +561,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<h4 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h4><p>关系运算符的结果都是boolean类型，要么为true，要么是false。</p>
-<div class="table-container">
+<h4 id="关系运算符">关系运算符</h4>
+<p>关系运算符的结果都是boolean类型，要么为true，要么是false。</p>
 <table>
 <thead>
 <tr>
@@ -589,8 +597,7 @@
 </tr>
 </tbody>
 </table>
-</div>
-<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><div class="table-container">
+<h4 id="逻辑运算符">逻辑运算符</h4>
 <table>
 <thead>
 <tr>
@@ -606,10 +613,9 @@
 <td style="text-align:center">并且，两边都为真，结果才是真</td>
 </tr>
 <tr>
-<td style="text-align:center">\</td>
-<td style="text-align:center"></td>
+<td style="text-align:center">|</td>
 <td style="text-align:center">逻辑或</td>
-<td>或者，两边都为假，结果才是假</td>
+<td style="text-align:center">或者，两边都为假，结果才是假</td>
 </tr>
 <tr>
 <td style="text-align:center">^</td>
@@ -623,8 +629,7 @@
 </tr>
 </tbody>
 </table>
-</div>
-<h4 id="短路逻辑运算符"><a href="#短路逻辑运算符" class="headerlink" title="短路逻辑运算符"></a>短路逻辑运算符</h4><div class="table-container">
+<h4 id="短路逻辑运算符">短路逻辑运算符</h4>
 <table>
 <thead>
 <tr>
@@ -640,16 +645,12 @@
 <td style="text-align:center">结果和&amp;相同，但是有短路效果</td>
 </tr>
 <tr>
-<td style="text-align:center">\</td>
-<td style="text-align:center">\</td>
-<td style="text-align:center"></td>
-<td>短路或</td>
-<td>结果和\</td>
-<td>相同，但是有短路效果</td>
+<td style="text-align:center">||</td>
+<td style="text-align:center">短路或</td>
+<td style="text-align:center">结果和|相同，但是有短路效果</td>
 </tr>
 </tbody>
 </table>
-</div>
 <ul>
 <li>&amp; | ，无论左边 true false，右边都要执行。</li>
 <li>&amp;&amp; || ，如果左边能确定整个表达式的结果，右边不执行。</li>
@@ -658,9 +659,10 @@
 </ul>
 <p>这两种情况下，右边不执行，提高了效率。</p>
 <p>最常用的逻辑运算符：&amp;&amp;，||。</p>
-<h4 id="三元运算符"><a href="#三元运算符" class="headerlink" title="三元运算符"></a>三元运算符</h4><p>格式：关系表达式？表达式1：表达式2；</p>
+<h4 id="三元运算符">三元运算符</h4>
+<p>格式：关系表达式？表达式1：表达式2；</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int max = a &gt; b ? a : b;</span><br></pre></td></tr></table></figure>
-<h4 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h4><div class="table-container">
+<h4 id="运算符优先级">运算符优先级</h4>
 <table>
 <thead>
 <tr>
@@ -675,7 +677,7 @@
 </tr>
 <tr>
 <td style="text-align:center">2</td>
-<td style="text-align:center">! ~ ++ —</td>
+<td style="text-align:center">! ~ ++ –</td>
 </tr>
 <tr>
 <td style="text-align:center">3</td>
@@ -707,8 +709,7 @@
 </tr>
 <tr>
 <td style="text-align:center">10</td>
-<td style="text-align:center">\</td>
-<td></td>
+<td style="text-align:center">|</td>
 </tr>
 <tr>
 <td style="text-align:center">11</td>
@@ -716,9 +717,7 @@
 </tr>
 <tr>
 <td style="text-align:center">12</td>
-<td style="text-align:center">\</td>
-<td>\</td>
-<td></td>
+<td style="text-align:center">||</td>
 </tr>
 <tr>
 <td style="text-align:center">13</td>
@@ -726,12 +725,10 @@
 </tr>
 <tr>
 <td style="text-align:center">14</td>
-<td style="text-align:center">= += -= *= /= %= &amp;= \</td>
-<td>= ^= &lt;&lt;= &gt;&gt;= &gt;&gt;&gt;=</td>
+<td style="text-align:center">= += -= *= /= %= &amp;= |= ^= &lt;&lt;= &gt;&gt;= &gt;&gt;&gt;=</td>
 </tr>
 </tbody>
 </table>
-</div>
 </article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://www.mostart.site">Sarya</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://www.mostart.site/2024/10/26/%E5%90%8E%E7%AB%AF/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">http://www.mostart.site/2024/10/26/%E5%90%8E%E7%AB%AF/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://www.mostart.site" target="_blank">Sarya</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Java/">Java</a><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a></div><div class="post_share"><div class="social-share" data-image="https://s3.bmp.ovh/imgs/2024/10/20/1113cce94fab55fa.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/10/27/%E6%97%A5%E8%AF%AD/%E7%BD%91%E7%AB%99%E6%97%A5%E6%B1%89%E5%AD%97%E6%B3%A8%E9%9F%B3/" title="网站日汉字注音"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">网站日汉字注音</div></div></a></div><div class="next-post pull-right"><a href="/2024/10/26/%E5%90%8E%E7%AB%AF/Java%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" title="Java开发工具"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Java开发工具</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s3.bmp.ovh/imgs/2024/10/20/1113cce94fab55fa.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Sarya</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.baidu.com"><i class="fa fa-heartbeat"></i><span>Chat With Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是我的博客！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-HelloWorld"><span class="toc-text">1.HelloWorld</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">2.数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5"><span class="toc-text">3.键盘输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">4.运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%97%E6%95%B0%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">算数运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%A2%9E%E8%87%AA%E5%87%8F%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">自增自减运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">关系运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">逻辑运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%AD%E8%B7%AF%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">短路逻辑运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89%E5%85%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">三元运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-text">运算符优先级</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/21/%E6%97%A5%E8%AF%AD/%E3%81%A7%E4%B8%8E%E3%81%AB%E7%9A%84%E5%8C%BA%E5%88%AB/" title="で与に区别">で与に区别</a><time datetime="2024-11-20T16:00:00.000Z" title="发表于 2024-11-21 00:00:00">2024-11-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/21/%E6%97%A5%E8%AF%AD/%E3%81%AF%E4%B8%8E%E3%81%8C%E5%8C%BA%E5%88%AB/" title="は与が区别">は与が区别</a><time datetime="2024-11-20T16:00:00.000Z" title="发表于 2024-11-21 00:00:00">2024-11-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/14/%E6%97%A5%E8%AF%AD/%E6%97%A5%E6%9C%AC%E6%8B%9B%E8%81%98%E7%BD%91%E7%AB%99/" title="日本招聘网站">日本招聘网站</a><time datetime="2024-11-13T16:00:00.000Z" title="发表于 2024-11-14 00:00:00">2024-11-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/10/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/H100/" title="H100">H100</a><time datetime="2024-11-09T16:00:00.000Z" title="发表于 2024-11-10 00:00:00">2024-11-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/10/%E6%97%A5%E8%AF%AD/%E5%8A%A8%E8%AF%8D%E5%8F%98%E5%BD%A2%E4%B9%8B%E3%81%A6%E5%BD%A2%E3%80%81%E3%81%9F%E5%BD%A2/" title="动词变形之て形、た形">动词变形之て形、た形</a><time datetime="2024-11-09T16:00:00.000Z" title="发表于 2024-11-10 00:00:00">2024-11-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By Sarya</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
   window.MathJax = {
     tex: {
