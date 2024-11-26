@@ -186,22 +186,21 @@
 </blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/Rudolf-Barbu/Ward">Rudolf-Barbu/Ward: Server dashboard that enables you to monitor and track the status of your server. (github.com)</a></p>
 <hr>
-<h3 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h3><div class="note note danger flat"><p style="color:#DE426B;">⚠BUG警告⚠</p>
-
-
-
+<h3 id="Docker安装">Docker安装</h3>
+<div class="note note danger flat"><p style="color:#DE426B;">⚠BUG警告⚠</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/AntonyLeons/Ward">Docker部署GitHub地址)</a></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --restart unless-stopped -it -d --name ward  -p 4000:4000 -e WARD_PORT=4000 -e WARD_THEME=light --privileged antonyleons/ward</span><br></pre></td></tr></table></figure>
 <p><strong>访问地址</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://38.55.239.122:4000</span><br></pre></td></tr></table></figure>
 </div>
 <hr>
-<h3 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a>手动安装</h3><p><strong>①下载安装包</strong></p>
+<h3 id="手动安装">手动安装</h3>
+<p><strong>①下载安装包</strong></p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/Rudolf-Barbu/Ward/archive/refs/tags/v1.8.8.tar.gz">https://github.com/Rudolf-Barbu/Ward/archive/refs/tags/v1.8.8.tar.gz</a></li>
 <li><a target="_blank" rel="noopener" href="https://file.cnxiaobai.com/Code/Ward/Ward.jar">https://file.cnxiaobai.com/Code/Ward/Ward.jar</a></li>
 </ul>
-<p>手动执行程序可用以下命令，Java环境安装见<a href="/2024/10/04/Linux/Linux安装Java环境/">Linux安装Java环境 | Sarya🧊</a>。</p>
+<p>手动执行程序可用以下命令，Java环境安装见<a href="/2024/10/04/Linux/Linux%E5%AE%89%E8%A3%85Java%E7%8E%AF%E5%A2%83/">Linux安装Java环境 | Sarya🧊</a>。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar /root/ward/Ward.jar</span><br></pre></td></tr></table></figure>
 <p><strong>②开机自动启动</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/systemd/system/myapp.service</span><br></pre></td></tr></table></figure>
