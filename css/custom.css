@@ -181,3 +181,12 @@ hr {
   height: 3px;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
+
+/* ice-icon图标 */
+.ice-icon {
+  width: 8%;
+  height: 50px;
+  background: url('/images/icons/ice.png') no-repeat center / contain;
+  float: left;
+  margin: -5px -5px 0 -20px;
+}
