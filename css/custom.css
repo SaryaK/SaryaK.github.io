@@ -181,11 +181,15 @@ hr {
   background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 
-/* ice-icon图标 */
-.ice-icon {
-  width: 8%;
-  height: 50px;
-  background: url('/images/icons/ice.png') no-repeat center / contain;
-  float: left;
-  margin: -5px -5px 0 -20px;
+
+/* 只影响类名为post的a标签 */
+.post-content a {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px rgba(17, 13, 13, 0.8);
+  --color: #ff6493;
+}
+
+.post-content a:hover {
+  color: var(--color) !important;
 }
