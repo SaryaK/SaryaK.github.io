@@ -155,6 +155,27 @@ h2::after {
 }
 
 
+h4 {
+  position: relative;
+  padding-left: 25px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+h4::after {
+  content: " ";
+  width: 8px;
+  height: 28px;
+  background: #ff6493;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 3px;
+  box-shadow: 0 5px 20px rgba(230, 62, 126, 0.7);
+  
+}
+
 /* 鼠标悬停卡片的样式 */
 .recent-post-item:hover {
   transform: scale(1.02);
@@ -182,14 +203,18 @@ hr {
 }
 
 
-/* 只影响类名为post的a标签 */
-.post-content a {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px rgba(17, 13, 13, 0.8);
-  --color: #ff6493;
+/* 只影响类名为post-content的a标签 */
+.post-content a,
+#article-container a {
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  -webkit-text-stroke: 1px rgba(17, 13, 13, 0.8) !important;
+  --color: #ff6493 !important;
 }
 
-.post-content a:hover {
+.post-content a:hover,
+#article-container a:hover {
+  -webkit-text-stroke: 1px var(--color) !important;
   color: var(--color) !important;
+  text-decoration: none !important;
 }
