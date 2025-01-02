@@ -26,18 +26,20 @@ pre {
 }
 
 /* 鼠标修改 */
-/*指针样式*/
+/* 指针样式
 body {
   cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
     default !important;
 }
 
-/*链接小手样式*/
 a,
 img {
   cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
     default !important;
-}
+} */
+
+
+
 
 /* 目录字体大小 */
 #card-toc {
@@ -173,7 +175,7 @@ h4::after {
   transform: translateY(-50%);
   border-radius: 3px;
   box-shadow: 0 5px 20px rgba(230, 62, 126, 0.7);
-  
+
 }
 
 /* 鼠标悬停卡片的样式 */
@@ -195,12 +197,12 @@ code {
   color: green !important;
 }
 
-/* 分割线 */
+/* 分割线
 hr {
   border: none;
   height: 3px;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
-}
+} */
 
 
 /* 只影响类名为post-content的a标签 */
