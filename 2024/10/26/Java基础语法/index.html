@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Java基础语法 | サンクチュアリ</title><meta name="author" content="Sarya"><meta name="copyright" content="Sarya"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="上部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV17F411T7Ao 下部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1yW4y1Y7Ms  1.HelloWorld12345public class Main &#123;    public static void main(String[] args) &#123;        System">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Java基础语法 | サンクチュアリ</title><meta name="author" content="Sarya"><meta name="copyright" content="Sarya"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="上部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV17F411T7Ao 下部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1yW4y1Y7Ms  1.HelloWorld 12345public class Main &#123;    public static void main(String[] args) &#123;        Syste">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java基础语法">
 <meta property="og:url" content="http://www.mostart.site/2024/10/26/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html">
 <meta property="og:site_name" content="サンクチュアリ">
-<meta property="og:description" content="上部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV17F411T7Ao 下部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1yW4y1Y7Ms  1.HelloWorld12345public class Main &#123;    public static void main(String[] args) &#123;        System">
+<meta property="og:description" content="上部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV17F411T7Ao 下部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1yW4y1Y7Ms  1.HelloWorld 12345public class Main &#123;    public static void main(String[] args) &#123;        Syste">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s3.bmp.ovh/imgs/2024/10/20/1113cce94fab55fa.jpg">
 <meta property="article:published_time" content="2024-10-25T16:00:00.000Z">
@@ -157,8 +157,10 @@
 <p>上部：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17F411T7Ao">https://www.bilibili.com/video/BV17F411T7Ao</a></p>
 <p>下部：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1yW4y1Y7Ms">https://www.bilibili.com/video/BV1yW4y1Y7Ms</a></p>
 </blockquote>
-<h3 id="1-HelloWorld"><a href="#1-HelloWorld" class="headerlink" title="1.HelloWorld"></a>1.HelloWorld</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(&quot;Hello world!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2.数据类型"></a>2.数据类型</h3><blockquote>
+<h3 id="1-HelloWorld">1.HelloWorld</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(&quot;Hello world!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-数据类型">2.数据类型</h3>
+<blockquote>
 <p>基本数据类型</p>
 </blockquote>
 <p>long类型需要在数字后加上L、float类型需要在数字后加上F。</p>
@@ -179,11 +181,13 @@
 <ul>
 <li>字符串（String）</li>
 </ul>
-<h3 id="3-键盘输入"><a href="#3-键盘输入" class="headerlink" title="3.键盘输入"></a>3.键盘输入</h3><blockquote>
+<h3 id="3-键盘输入">3.键盘输入</h3>
+<blockquote>
 <p>导入包并实例化对象</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import java.util.Scanner;</span><br><span class="line">Scanner sc = new Scanner(System.in);</span><br><span class="line">int i = sc.nextInt();</span><br></pre></td></tr></table></figure>
-<h3 id="4-运算符"><a href="#4-运算符" class="headerlink" title="4.运算符"></a>4.运算符</h3><blockquote>
+<h3 id="4-运算符">4.运算符</h3>
+<blockquote>
 <p>目录：</p>
 <ul>
 <li>算数运算符</li>
@@ -195,7 +199,8 @@
 <li>运算符优先级</li>
 </ul>
 </blockquote>
-<h4 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h4><p>整数参与，计算只能得到整数。</p>
+<h4 id="算数运算符">算数运算符</h4>
+<p>整数参与，计算只能得到整数。</p>
 <p>小数参与计算，计算结果可能是不准确的。</p>
 <ul>
 <li>加减乘除取余（+、-、*、/、%）</li>
@@ -221,8 +226,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int age = 1;</span><br><span class="line">System.out.println(3.7 + &quot;abc&quot;); // 3.7abc</span><br><span class="line">System.out.println(&quot;abc&quot; + true); // abctrue</span><br><span class="line">System.out.println(&quot;中&quot; + &#x27;abc&#x27; + true); // 中abctrue</span><br><span class="line">System.out.println(&#x27;我的年龄是&#x27; + age); // 我的年龄是1</span><br><span class="line">System.out.println(&#x27;我的年龄是&#x27; + &quot;age&quot;); // 我的年龄是age</span><br><span class="line">System.out.println(1 + 2 + &quot;abc&quot; + 2 + 1); // 3abc21</span><br></pre></td></tr></table></figure>
 <p><strong>字符类型的“＋”操作</strong></p>
 <p><code>字符＋字符</code>或<code>字符＋数字</code>时，会把字符通过ASCII码表查询到对应数字再进行相加。</p>
-<details class="toggle" ><summary class="toggle-button" style="">部分ASCII码表</summary><div class="toggle-content"><div class="table-container">
-<table>
+<details class="toggle" ><summary class="toggle-button" style="">部分ASCII码表</summary><div class="toggle-content"><table>
 <thead>
 <tr>
 <th style="text-align:center">十进制</th>
@@ -252,7 +256,7 @@
 </tr>
 <tr>
 <td style="text-align:center">34</td>
-<td style="text-align:center">“</td>
+<td style="text-align:center">&quot;</td>
 <td style="text-align:center">50</td>
 <td style="text-align:center">2</td>
 <td style="text-align:center">66</td>
@@ -292,7 +296,7 @@
 </tr>
 <tr>
 <td style="text-align:center">39</td>
-<td style="text-align:center">‘</td>
+<td style="text-align:center">’</td>
 <td style="text-align:center">55</td>
 <td style="text-align:center">7</td>
 <td style="text-align:center">71</td>
@@ -488,15 +492,16 @@
 <td style="text-align:center">111</td>
 <td style="text-align:center">o</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
-</div>
 </div></details>
 <p>一些例子</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(1 + &#x27;a&#x27;); // 98</span><br><span class="line">System.out.println(&#x27;a&#x27; + &quot;b&quot;); // ab</span><br></pre></td></tr></table></figure>
-<h4 id="自增自减运算符"><a href="#自增自减运算符" class="headerlink" title="自增自减运算符"></a>自增自减运算符</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        int x = 10;</span><br><span class="line">        int y = x++;</span><br><span class="line">        int z = ++x;</span><br><span class="line">        System.out.println(&quot;x:&quot; + x);</span><br><span class="line">        System.out.println(&quot;y:&quot; + y);</span><br><span class="line">        System.out.println(&quot;z:&quot; + z);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;--输出--&gt;</span><br><span class="line">x:12</span><br><span class="line">y:10</span><br><span class="line">z:12</span><br></pre></td></tr></table></figure>
-<h4 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h4><div class="table-container">
+<h4 id="自增自减运算符">自增自减运算符</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        int x = 10;</span><br><span class="line">        int y = x++;</span><br><span class="line">        int z = ++x;</span><br><span class="line">        System.out.println(&quot;x:&quot; + x);</span><br><span class="line">        System.out.println(&quot;y:&quot; + y);</span><br><span class="line">        System.out.println(&quot;z:&quot; + z);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;--输出--&gt;</span><br><span class="line">x:12</span><br><span class="line">y:10</span><br><span class="line">z:12</span><br></pre></td></tr></table></figure>
+<h4 id="赋值运算符">赋值运算符</h4>
 <table>
 <thead>
 <tr>
@@ -538,9 +543,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<h4 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h4><p>关系运算符的结果都是boolean类型，要么为true，要么是false。</p>
-<div class="table-container">
+<h4 id="关系运算符">关系运算符</h4>
+<p>关系运算符的结果都是boolean类型，要么为true，要么是false。</p>
 <table>
 <thead>
 <tr>
@@ -575,8 +579,7 @@
 </tr>
 </tbody>
 </table>
-</div>
-<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><div class="table-container">
+<h4 id="逻辑运算符">逻辑运算符</h4>
 <table>
 <thead>
 <tr>
@@ -592,10 +595,9 @@
 <td style="text-align:center">并且，两边都为真，结果才是真</td>
 </tr>
 <tr>
-<td style="text-align:center">\</td>
-<td style="text-align:center"></td>
+<td style="text-align:center">|</td>
 <td style="text-align:center">逻辑或</td>
-<td>或者，两边都为假，结果才是假</td>
+<td style="text-align:center">或者，两边都为假，结果才是假</td>
 </tr>
 <tr>
 <td style="text-align:center">^</td>
@@ -609,8 +611,7 @@
 </tr>
 </tbody>
 </table>
-</div>
-<h4 id="短路逻辑运算符"><a href="#短路逻辑运算符" class="headerlink" title="短路逻辑运算符"></a>短路逻辑运算符</h4><div class="table-container">
+<h4 id="短路逻辑运算符">短路逻辑运算符</h4>
 <table>
 <thead>
 <tr>
@@ -626,16 +627,12 @@
 <td style="text-align:center">结果和&amp;相同，但是有短路效果</td>
 </tr>
 <tr>
-<td style="text-align:center">\</td>
-<td style="text-align:center">\</td>
-<td style="text-align:center"></td>
-<td>短路或</td>
-<td>结果和\</td>
-<td>相同，但是有短路效果</td>
+<td style="text-align:center">||</td>
+<td style="text-align:center">短路或</td>
+<td style="text-align:center">结果和|相同，但是有短路效果</td>
 </tr>
 </tbody>
 </table>
-</div>
 <ul>
 <li>&amp; | ，无论左边 true false，右边都要执行。</li>
 <li>&amp;&amp; || ，如果左边能确定整个表达式的结果，右边不执行。</li>
@@ -644,9 +641,10 @@
 </ul>
 <p>这两种情况下，右边不执行，提高了效率。</p>
 <p>最常用的逻辑运算符：&amp;&amp;，||。</p>
-<h4 id="三元运算符"><a href="#三元运算符" class="headerlink" title="三元运算符"></a>三元运算符</h4><p>格式：关系表达式？表达式1：表达式2；</p>
+<h4 id="三元运算符">三元运算符</h4>
+<p>格式：关系表达式？表达式1：表达式2；</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int max = a &gt; b ? a : b;</span><br></pre></td></tr></table></figure>
-<h4 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h4><div class="table-container">
+<h4 id="运算符优先级">运算符优先级</h4>
 <table>
 <thead>
 <tr>
@@ -661,7 +659,7 @@
 </tr>
 <tr>
 <td style="text-align:center">2</td>
-<td style="text-align:center">! ~ ++ —</td>
+<td style="text-align:center">! ~ ++ –</td>
 </tr>
 <tr>
 <td style="text-align:center">3</td>
@@ -693,8 +691,7 @@
 </tr>
 <tr>
 <td style="text-align:center">10</td>
-<td style="text-align:center">\</td>
-<td></td>
+<td style="text-align:center">|</td>
 </tr>
 <tr>
 <td style="text-align:center">11</td>
@@ -702,9 +699,7 @@
 </tr>
 <tr>
 <td style="text-align:center">12</td>
-<td style="text-align:center">\</td>
-<td>\</td>
-<td></td>
+<td style="text-align:center">||</td>
 </tr>
 <tr>
 <td style="text-align:center">13</td>
@@ -712,13 +707,12 @@
 </tr>
 <tr>
 <td style="text-align:center">14</td>
-<td style="text-align:center">= += -= *= /= %= &amp;= \</td>
-<td>= ^= &lt;&lt;= &gt;&gt;= &gt;&gt;&gt;=</td>
+<td style="text-align:center">= += -= *= /= %= &amp;= |= ^= &lt;&lt;= &gt;&gt;= &gt;&gt;&gt;=</td>
 </tr>
 </tbody>
 </table>
-</div>
-<h3 id="5-判断语句"><a href="#5-判断语句" class="headerlink" title="5.判断语句"></a>5.判断语句</h3><p>if判断语句的三种格式。</p>
+<h3 id="5-判断语句">5.判断语句</h3>
+<p>if判断语句的三种格式。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int num = 10;</span><br><span class="line">if (num == 10) &#123;</span><br><span class="line">	System.out.println(&quot;HelloWorld&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">int num = 10;</span><br><span class="line">if (num == 10) &#123;</span><br><span class="line">	System.out.println(&quot;Good&quot;);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">	System.out.println(&quot;Bad&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">int num = 10;</span><br><span class="line">if (num == 1) &#123;</span><br><span class="line">	System.out.println(&quot;1&quot;);</span><br><span class="line">&#125; else if(num == 2) &#123;</span><br><span class="line">	System.out.println(&quot;2&quot;);</span><br><span class="line">&#125; else if(num == 3) &#123;</span><br><span class="line">	System.out.println(&quot;3&quot;);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">	System.out.println(&quot;NO&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -729,49 +723,67 @@
 <p>case：后面跟着表达式要匹配的值，case后面只能是字面量，给出的值不能重复。</p>
 <p>break：表示中断、结束。</p>
 <p>dafault：表示所有情况都不匹配的时候，就执行的语句内容。</p>
-<h3 id="6-数组"><a href="#6-数组" class="headerlink" title="6.数组"></a>6.数组</h3><p>数组是一种容器，用来存储同种数据类型的多个值。</p>
+<h3 id="6-数组">6.数组</h3>
+<p>数组是一种容器，用来存储同种数据类型的多个值。</p>
 <p>中括号写在前写在后都是可以的:①<code>int[] array</code>②<code>int array[]</code></p>
 <p>数组初始化：在内存中，为数组容器开辟空间，将数据存入容器的过程。</p>
-<h4 id="1-数组静态初始化"><a href="#1-数组静态初始化" class="headerlink" title="1.数组静态初始化"></a>1.数组静态初始化</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int[] array = new int[] &#123;1, 2, 3, 4, 5&#125;;</span><br></pre></td></tr></table></figure>
+<h4 id="1-数组静态初始化">1.数组静态初始化</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int[] array = new int[] &#123;1, 2, 3, 4, 5&#125;;</span><br></pre></td></tr></table></figure>
 <p><strong>简写格式</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int[] array = &#123;1, 2, 3, 4, 5&#125;;</span><br></pre></td></tr></table></figure>
-<h4 id="2-数组动态初始化"><a href="#2-数组动态初始化" class="headerlink" title="2.数组动态初始化"></a>2.数组动态初始化</h4><p>初始化时只指定数组长度，由系统为数组分配初始值。</p>
+<h4 id="2-数组动态初始化">2.数组动态初始化</h4>
+<p>初始化时只指定数组长度，由系统为数组分配初始值。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int[] array = new int[20];</span><br></pre></td></tr></table></figure>
 <p>数组默认初始化值</p>
 <ul>
 <li>整数类型：0</li>
 <li>小数类型：0.0</li>
-<li>字符类型：’\u0000’空格</li>
+<li>字符类型：'\u0000’空格</li>
 <li>布尔类型：false</li>
 <li>引用类型：null</li>
 </ul>
-<h4 id="3-数组地址"><a href="#3-数组地址" class="headerlink" title="3.数组地址"></a>3.数组地址</h4><p>直接打印数组时，输出地址值。<code>[</code>代表数组，<code>I</code>代表数据类型，<code>@</code>是分隔符，<code>10f87f48（十六进制）</code>实际地址。</p>
+<h4 id="3-数组地址">3.数组地址</h4>
+<p>直接打印数组时，输出地址值。<code>[</code>代表数组，<code>I</code>代表数据类型，<code>@</code>是分隔符，<code>10f87f48（十六进制）</code>实际地址。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int[] array = new int[] &#123;1, 2, 3, 4, 5&#125;;</span><br><span class="line">System.out.println(array);</span><br><span class="line">&lt;--控制台--&gt;</span><br><span class="line">[I@10f87f48</span><br></pre></td></tr></table></figure>
-<h4 id="4-元素访问"><a href="#4-元素访问" class="headerlink" title="4.元素访问"></a>4.元素访问</h4><p>依索引值访问。</p>
+<h4 id="4-元素访问">4.元素访问</h4>
+<p>依索引值访问。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int[] array = new int[] &#123;1, 2, 3, 4, 5&#125;;</span><br><span class="line">System.out.println(array[0]);</span><br></pre></td></tr></table></figure>
-<h4 id="5-数组遍历"><a href="#5-数组遍历" class="headerlink" title="5.数组遍历"></a>5.数组遍历</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 0; i &lt; array.length; i++) &#123;</span><br><span class="line">    System.out.println(array[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="6-数组常见操作"><a href="#6-数组常见操作" class="headerlink" title="6.数组常见操作"></a>6.数组常见操作</h4><p><strong>求最值</strong></p>
+<h4 id="5-数组遍历">5.数组遍历</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 0; i &lt; array.length; i++) &#123;</span><br><span class="line">    System.out.println(array[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="6-数组常见操作">6.数组常见操作</h4>
+<p><strong>求最值</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int[] list = &#123;33, 5, 22, 44, 55&#125;;</span><br><span class="line">int max = list[0];</span><br><span class="line">for (int i = 1; i &lt; list.length; i++) &#123;</span><br><span class="line">	if (list[i] &gt; max) &#123;</span><br><span class="line">		max = list[i];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(&quot;max:&quot; + max);</span><br></pre></td></tr></table></figure>
 <p><strong>求和</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">import java.util.Random;</span><br><span class="line"></span><br><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        int[] list = new int[10];</span><br><span class="line">        int sum = 0;</span><br><span class="line">        Random r = new Random();</span><br><span class="line">        for (int i = 0; i &lt; list.length; i++) &#123;</span><br><span class="line">            int num = r.nextInt(100) + 1;</span><br><span class="line">            list[i] = num;</span><br><span class="line">        &#125;</span><br><span class="line">        for (int i = 0; i &lt; list.length; i++) &#123;</span><br><span class="line">            sum += list[i];</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(&quot;sum:&quot; + sum);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p><strong>交换数据</strong></p>
 <p><strong>打乱数据</strong></p>
-<h3 id="7-随机数"><a href="#7-随机数" class="headerlink" title="7.随机数"></a>7.随机数</h3><p>导入包</p>
+<h3 id="7-随机数">7.随机数</h3>
+<p>导入包</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import java.util.Random;</span><br></pre></td></tr></table></figure>
 <p>Random类的 nextInt(int bound)方法只能接受一个参数。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> r.nextInt(<span class="number">100</span>) + <span class="number">1</span>; <span class="comment">// 生成范围在 [1, 100] 的随机整数</span></span><br></pre></td></tr></table></figure>
 <p>这样，<code>nextInt(100)</code> 会生成一个从 0 到 99 的随机整数，然后加 1 就会将范围调整到 [1, 100]。</p>
 <p>如果你想生成一个范围在 [min, max] 的随机整数，可以使用以下方法：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">min</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> <span class="number">100</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> r.nextInt(max - min) + min; <span class="comment">// 生成范围在 [1, 100] 的随机整数</span></span><br></pre></td></tr></table></figure>
-<h4 id="1-随机大小写字母"><a href="#1-随机大小写字母" class="headerlink" title="1.随机大小写字母"></a>1.随机大小写字母</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public static String generateRandomChar() &#123;</span><br><span class="line">        Random random = new Random();</span><br><span class="line">        String result = &quot;&quot;;</span><br><span class="line">        int rand = random.nextInt(52);</span><br><span class="line">        if (rand &lt; 26) &#123;</span><br><span class="line">            result += (char) (&#x27;A&#x27; + rand);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            result += (char) (&#x27;a&#x27; + (rand - 26));</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="8-方法"><a href="#8-方法" class="headerlink" title="8.方法"></a>8.方法</h3><h4 id="1-完整格式"><a href="#1-完整格式" class="headerlink" title="1.完整格式"></a>1.完整格式</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public static int spring(int num1, int num2) &#123;</span><br><span class="line">	return num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="2-方法重载"><a href="#2-方法重载" class="headerlink" title="2.方法重载"></a>2.方法重载</h4><p>需在同一个类中, 方法重载为参数不同，返回值无关。<br>重载的三种形式: 个数不同、类型不同、顺序不同。</p>
+<h4 id="1-随机大小写字母">1.随机大小写字母</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public static String generateRandomChar() &#123;</span><br><span class="line">        Random random = new Random();</span><br><span class="line">        String result = &quot;&quot;;</span><br><span class="line">        int rand = random.nextInt(52);</span><br><span class="line">        if (rand &lt; 26) &#123;</span><br><span class="line">            result += (char) (&#x27;A&#x27; + rand);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            result += (char) (&#x27;a&#x27; + (rand - 26));</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="8-方法">8.方法</h3>
+<h4 id="1-完整格式">1.完整格式</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public static int spring(int num1, int num2) &#123;</span><br><span class="line">	return num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-方法重载">2.方法重载</h4>
+<p>需在同一个类中, 方法重载为参数不同，返回值无关。<br>
+重载的三种形式: 个数不同、类型不同、顺序不同。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public static int sum(int num1, int num2) &#123;return num1 + num2;&#125;</span><br><span class="line">public static int sum(int num1, int num2, int num3) &#123;return num1 + num2 + num3;&#125;</span><br><span class="line"></span><br><span class="line">public static void spring(int num1) &#123;&#125;</span><br><span class="line">public static void spring(double num1) &#123;&#125;</span><br><span class="line"></span><br><span class="line">public static void spring(int num1, double num2) &#123;&#125;</span><br><span class="line">public static void spring(double num1, int num2) &#123;&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="3-内存原理"><a href="#3-内存原理" class="headerlink" title="3.内存原理"></a>3.内存原理</h4><p>JVM虚拟机占用一部分内存空间。</p>
+<h4 id="3-内存原理">3.内存原理</h4>
+<p>JVM虚拟机占用一部分内存空间。</p>
 <p>JVM将内存分为5个部分：</p>
 <ul>
-<li><span class='p red'>栈：方法运行时使用的内存，方法进栈运行，运行完毕就出栈。</span></li>
-<li><span class='p red'>堆：new出来的，都在堆内存中开辟了一个小空间。</span></li>
+<li>
+<span class='p red'>栈：方法运行时使用的内存，方法进栈运行，运行完毕就出栈。</span>
+</li>
+<li>
+<span class='p red'>堆：new出来的，都在堆内存中开辟了一个小空间。</span>
+</li>
 <li>方法区：储存类和方法的信息</li>
 <li>本地方法栈：JVM在使用操作系统功能的时候时候</li>
 <li>寄存器：给CPU使用</li>
@@ -779,16 +791,22 @@
 <p>具体例子</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        eat();</span><br><span class="line">    &#125;</span><br><span class="line">    public static void eat() &#123;</span><br><span class="line">        study();</span><br><span class="line">        System.out.println(&quot;吃饭&quot;);</span><br><span class="line">        sleep();</span><br><span class="line">    &#125;</span><br><span class="line">    public static void sleep() &#123;</span><br><span class="line">        System.out.println(&quot;睡觉&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    public static void study() &#123;</span><br><span class="line">        System.out.println(&quot;学习&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">栈图示</span><br><span class="line">|	</span><br><span class="line">|	方法[sleep: sout(&quot;睡觉&quot;)](回到调用处)</span><br><span class="line">|	方法[eat: study(); sout(&quot;吃饭&quot;)]</span><br><span class="line">|	方法[main: eat();]</span><br><span class="line">------------------------------------------------</span><br></pre></td></tr></table></figure>
-<h4 id="4-基本数据类型和引用数据类型"><a href="#4-基本数据类型和引用数据类型" class="headerlink" title="4.基本数据类型和引用数据类型"></a>4.基本数据类型和引用数据类型</h4><p>基本数据类型存储实际的值。</p>
+<h4 id="4-基本数据类型和引用数据类型">4.基本数据类型和引用数据类型</h4>
+<p>基本数据类型存储实际的值。</p>
 <p>引用数据类型存储地址的值。</p>
-<h3 id="9-面向对象"><a href="#9-面向对象" class="headerlink" title="9.面向对象"></a>9.面向对象</h3><h4 id="1-定于类"><a href="#1-定于类" class="headerlink" title="1.定于类"></a>1.定于类</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public class 类名 &#123;</span><br><span class="line">	1.成员变量</span><br><span class="line">	2.成员方法</span><br><span class="line">	3.构造器</span><br><span class="line">	4.代码块</span><br><span class="line">	5.内部类</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="2-定义类的补充注意事项"><a href="#2-定义类的补充注意事项" class="headerlink" title="2.定义类的补充注意事项"></a>2.定义类的补充注意事项</h4><p>用来描述一类事物的类，专业叫做<code>javaBean类</code>。<br>在JavaBean类中，是不写main方法的。</p>
-<p>在以前，编写main方法的类，叫做<code>测试类</code>。<br>我们可以在测试类中创建JavaBean类的对象并进行赋值调用。</p>
+<h3 id="9-面向对象">9.面向对象</h3>
+<h4 id="1-定于类">1.定于类</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public class 类名 &#123;</span><br><span class="line">	1.成员变量</span><br><span class="line">	2.成员方法</span><br><span class="line">	3.构造器</span><br><span class="line">	4.代码块</span><br><span class="line">	5.内部类</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-定义类的补充注意事项">2.定义类的补充注意事项</h4>
+<p>用来描述一类事物的类，专业叫做<code>javaBean类</code>。<br>
+在JavaBean类中，是不写main方法的。</p>
+<p>在以前，编写main方法的类，叫做<code>测试类</code>。<br>
+我们可以在测试类中创建JavaBean类的对象并进行赋值调用。</p>
 <p>类名首字母建议大写，需要见名知意，驼峰模式。</p>
 <p>一个Java文件中可以定义多个class类，且只能有一个类是public修饰，而public修饰的类名必须和文件名一致。</p>
 <p>实际开发中建议还是一个文件定义一个class类。</p>
 <p>成员变量的完整定义格式是：数据类型 变量名 = 初始值； 一般无需指定初始值，存在默认值。</p>
-<h4 id="3-对象成员变量的默认值"><a href="#3-对象成员变量的默认值" class="headerlink" title="3.对象成员变量的默认值"></a>3.对象成员变量的默认值</h4><div class="table-container">
+<h4 id="3-对象成员变量的默认值">3.对象成员变量的默认值</h4>
 <table>
 <thead>
 <tr>
@@ -820,13 +838,14 @@
 </tr>
 </tbody>
 </table>
-</div>
-<h4 id="4-封装"><a href="#4-封装" class="headerlink" title="4.封装"></a>4.封装</h4><p>需求：人画圆，请针对这个需求进行面向对象设计。</p>
+<h4 id="4-封装">4.封装</h4>
+<p>需求：人画圆，请针对这个需求进行面向对象设计。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public viod draw() &#123;</span><br><span class="line">	System.out.println(&quot;画圆&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>画圆的行为应该添加在人还是圆上。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class Persion &#123;</span><br><span class="line">	pass</span><br><span class="line">&#125;</span><br><span class="line">public class Circle &#123;</span><br><span class="line">	pass</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>对象代表什么，就得封装对应的数据，并提供数据相应的行为。</p>
-<h4 id="5-权限修饰符"><a href="#5-权限修饰符" class="headerlink" title="5.权限修饰符"></a>5.权限修饰符</h4><p>private关键字是一个权限修饰符，保证数据安全。</p>
+<h4 id="5-权限修饰符">5.权限修饰符</h4>
+<p>private关键字是一个权限修饰符，保证数据安全。</p>
 <ul>
 <li>可以修饰成员变量和成员方法。</li>
 <li>被修饰的成员只能在本类中才能访问。</li>
@@ -834,11 +853,13 @@
 <li>针对 每一个私有变量提供get和set方法。</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">// JavaBean类中</span><br><span class="line">package spring;</span><br><span class="line"></span><br><span class="line">public class Action &#123;</span><br><span class="line">    private double block = 0;</span><br><span class="line">    public void setBlock(double i) &#123;</span><br><span class="line">        if (i &gt;= 0 &amp;&amp; i &lt;= 100) &#123;</span><br><span class="line">            block = i;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            System.out.println(&quot;非法数据&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    public double getBlock() &#123;</span><br><span class="line">        return block;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 测试类中</span><br><span class="line">package spring;</span><br><span class="line"></span><br><span class="line">import java.util.Random;</span><br><span class="line"></span><br><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Action ret = new Action();</span><br><span class="line">        ret.setBlock(10);</span><br><span class="line">        double block = ret.getBlock();</span><br><span class="line">        System.out.println(&quot;block:&quot; + block);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 输出结果</span><br><span class="line">block:10.0</span><br></pre></td></tr></table></figure>
-<h4 id="6-就近原则和this关键字"><a href="#6-就近原则和this关键字" class="headerlink" title="6.就近原则和this关键字"></a>6.就近原则和this关键字</h4><p>就近原则，谁离我近就用谁。</p>
+<h4 id="6-就近原则和this关键字">6.就近原则和this关键字</h4>
+<p>就近原则，谁离我近就用谁。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public class Action &#123;</span><br><span class="line">    private double block = 50;</span><br><span class="line">    public void getBlock() &#123;</span><br><span class="line">        double block = 0;</span><br><span class="line">        System.out.println(&quot;block:&quot; + block); // 0</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>使用this关键字指定成员变量。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public void setBlock(double block) &#123;</span><br><span class="line">	this.block = block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="7-构造方法"><a href="#7-构造方法" class="headerlink" title="7.构造方法"></a>7.构造方法</h4><p>构造方法也叫构造器、构造函数。</p>
+<h4 id="7-构造方法">7.构造方法</h4>
+<p>构造方法也叫构造器、构造函数。</p>
 <p>在创建对象的时候给成员变量进行赋值的，由虚拟机调用，不能手动调用构造方法，每创建一次对象，就会调用一次构造方法。</p>
 <p>在以往，调用空参的构造方法。在未写任何构造方法，默认是空参构造，写了构造方法需要人为写空参构造。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Action ret = new Action();</span><br></pre></td></tr></table></figure>
@@ -852,7 +873,8 @@
 </ul>
 <p><strong>用法示例</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// JavaBean类中</span><br><span class="line">package spring;</span><br><span class="line"></span><br><span class="line">public class Action &#123;</span><br><span class="line">    private double block = 0;</span><br><span class="line">    private double state = 0;</span><br><span class="line">    public Action() &#123;</span><br><span class="line">        System.out.println(&quot;执行了空参构造&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    public Action(double block, double state) &#123;</span><br><span class="line">        this.block = block;</span><br><span class="line">        this.state = state;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="8-标准JavaBean类"><a href="#8-标准JavaBean类" class="headerlink" title="8.标准JavaBean类"></a>8.标准JavaBean类</h4><p>①类名需要见名知意</p>
+<h4 id="8-标准JavaBean类">8.标准JavaBean类</h4>
+<p>①类名需要见名知意</p>
 <p>②成员变量使用private修饰</p>
 <p>③至少提供两个构造方法</p>
 <ul>
@@ -876,12 +898,16 @@
 <li>商城下载ptg</li>
 <li>右键点击ptg to JavaBean</li>
 </ul>
-<h4 id="9-继承"><a href="#9-继承" class="headerlink" title="9.继承"></a>9.继承</h4><h2 id="10-字符串"><a href="#10-字符串" class="headerlink" title="10.字符串"></a>10.字符串</h2><h4 id="String概述"><a href="#String概述" class="headerlink" title="String概述"></a>String概述</h4><ul>
+<h4 id="9-继承">9.继承</h4>
+<h2 id="10-字符串">10.字符串</h2>
+<h4 id="String概述">String概述</h4>
+<ul>
 <li>String是Java定义的一个类，定义在java.lang包中，所以使用的时候不需要导包。</li>
 <li>Java程序中的所有字符串文本（例如“abcdefg”）都被实例为此类的对象。</li>
 <li>字符串不可变，它们的值在创建后不能被更改。</li>
 </ul>
-<h4 id="String构造方法"><a href="#String构造方法" class="headerlink" title="String构造方法"></a>String构造方法</h4><blockquote>
+<h4 id="String构造方法">String构造方法</h4>
+<blockquote>
 <p>创建String对象的两种方式</p>
 </blockquote>
 <ul>
@@ -889,7 +915,6 @@
 <li>new</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String name = &quot;Nusaya&quot;</span><br></pre></td></tr></table></figure>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -916,7 +941,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">// 2. 使用new的方式获取一个字符串对象</span><br><span class="line">String s2 = new String();</span><br><span class="line">System.out.println(&quot;@&quot; + s2 + &quot;！&quot;);</span><br><span class="line"></span><br><span class="line">// 传递一个字符数组，根据字符数组的内容创建一个新的字符串对象</span><br><span class="line">String s3 = new String(&quot;abc&quot;);</span><br><span class="line">System.out.println(s3);</span><br><span class="line"></span><br><span class="line">// 传递一个字符数组，根据字符数组的内容再创建一个新的字符串对象</span><br><span class="line">// abc -&gt; &#123;&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;&#125; -&gt; &#x27;Q&#x27;,&#x27;b&#x27;,&#x27;c&#x27; -&gt; &quot;Qbc&quot;</span><br><span class="line">char[] chs = &#123;&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;&#125;;</span><br><span class="line">String s4 = new String(chs);</span><br><span class="line">System.out.println(s4); // /abcd</span><br><span class="line"></span><br><span class="line">// 传递一个字节数组，根据字节数组的内容创建一个新的字符串对象</span><br><span class="line">// 应用场景：以后的网络传输中的数据其实是字节信息</span><br><span class="line">// 97 -&gt; &#x27;a&#x27;, 98 -&gt; &#x27;b&#x27;, 99 -&gt; &#x27;c&#x27;</span><br><span class="line">byte[] bytes = &#123;97, 98, 99&#125;; </span><br><span class="line">String s5 = new String(bytes);</span><br><span class="line">System.out.println(s5); // /abc</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>不同创建方式在内存中的区别</p>
@@ -926,7 +950,8 @@
 <p><img src="https://s3.bmp.ovh/imgs/2025/01/10/5316bed676297ac8.webp" alt=""></p>
 <p>直接new出来时。</p>
 <p><img src="https://s3.bmp.ovh/imgs/2025/01/10/c9d5fa95e2d8b36f.webp" alt=""></p>
-<h4 id="字符串的比较"><a href="#字符串的比较" class="headerlink" title="字符串的比较"></a>字符串的比较</h4><blockquote>
+<h4 id="字符串的比较">字符串的比较</h4>
+<blockquote>
 <p>==号比的到底是什么</p>
 </blockquote>
 <p>基本数据类型：比较的是数据值</p>
@@ -944,7 +969,8 @@
 <p>拓展，键盘录入的字符串与串池的字符串地址比较</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Scanner sc = new Scanner(System.in);</span><br><span class="line">String str1 = sc.next(); </span><br><span class="line">String str2 = &quot;abc&quot;;</span><br><span class="line">System.out.println(str1 == str2); // false</span><br></pre></td></tr></table></figure>
-<h4 id="字符串练习"><a href="#字符串练习" class="headerlink" title="字符串练习"></a>字符串练习</h4><blockquote>
+<h4 id="字符串练习">字符串练习</h4>
+<blockquote>
 <p>用户登录</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">rightUsername</span> <span class="operator">=</span> <span class="string">&quot;admin&quot;</span>;</span><br><span class="line">        <span class="type">String</span> <span class="variable">rightPassword</span> <span class="operator">=</span> <span class="string">&quot;123456&quot;</span>;</span><br><span class="line"></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</span><br><span class="line">            System.out.print(<span class="string">&quot;请输入用户名:&quot;</span>);</span><br><span class="line">            <span class="type">String</span> <span class="variable">username</span> <span class="operator">=</span> sc.next();</span><br><span class="line">            System.out.print(<span class="string">&quot;请输入密码:&quot;</span>);</span><br><span class="line">            <span class="type">String</span> <span class="variable">password</span> <span class="operator">=</span> sc.next();</span><br><span class="line">            <span class="keyword">if</span> (username.equals(rightUsername) &amp;&amp; password.equals(rightPassword)) &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;用户登录成功&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (i == <span class="number">2</span>) &#123;</span><br><span class="line">                    System.out.println(<span class="string">&quot;账号:&quot;</span> + username + <span class="string">&quot;被锁定&quot;</span>);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    System.out.println(<span class="string">&quot;用户登录失败, 用户名或密码错误, 还剩下&quot;</span> + (<span class="number">2</span>-i) + <span class="string">&quot;次机会&quot;</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -962,7 +988,8 @@
 <p>统计字符个数</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span> <span class="variable">bigCount</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">smallCount</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">numberCount</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.print(<span class="string">&quot;请输入一个字符串:&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> sc.next();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; str.length(); i++) &#123;</span><br><span class="line">            <span class="type">char</span> <span class="variable">c</span> <span class="operator">=</span> str.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (c &gt;= <span class="string">&#x27;a&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;z&#x27;</span>) &#123;</span><br><span class="line">                smallCount++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (c &gt;= <span class="string">&#x27;A&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;Z&#x27;</span>) &#123;</span><br><span class="line">               bigCount++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (c &gt;= <span class="string">&#x27;0&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;9&#x27;</span>) &#123;</span><br><span class="line">                numberCount++;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;小写字母个数:&quot;</span> + smallCount);</span><br><span class="line">        System.out.println(<span class="string">&quot;大写字母个数:&quot;</span> + bigCount);</span><br><span class="line">        System.out.println(<span class="string">&quot;数字个数:&quot;</span> + numberCount);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a>StringBuilder</h4><blockquote>
+<h4 id="StringBuilder">StringBuilder</h4>
+<blockquote>
 <p>StringBuilder是Java已经写好的类，Java在底层对他做了一些特殊处理，打印对象不是地址值而是属性值。</p>
 </blockquote>
 <p>StringBulider可以看成是一个容器，创建后里面的内容是可变的。</p>
@@ -970,7 +997,6 @@
 <blockquote>
 <p>构造方法</p>
 </blockquote>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -989,12 +1015,10 @@
 </tr>
 </tbody>
 </table>
-</div>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">StringBuilder sb = new StringBuilder(&quot;abc&quot;);</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>成员方法</p>
 </blockquote>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -1021,17 +1045,16 @@
 </tr>
 </tbody>
 </table>
-</div>
 <blockquote>
 <p>使用示例</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        // 1.创建对象</span><br><span class="line">        StringBuilder sb = new StringBuilder();</span><br><span class="line"></span><br><span class="line">        // 2.添加元素</span><br><span class="line">        sb.append(1).append(2.3).append(true);</span><br><span class="line"></span><br><span class="line">        // 3.反转对象</span><br><span class="line">        sb.reverse();</span><br><span class="line"></span><br><span class="line">        // 4.打印对象</span><br><span class="line">        System.out.println(sb);</span><br><span class="line">        String str = sb.toString();</span><br><span class="line">        System.out.println(str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h4><p>StringJoiner跟StringBuilder一样，也可以看成一个容器，创建后里面的内容是可变的。</p>
+<h4 id="StringJoiner">StringJoiner</h4>
+<p>StringJoiner跟StringBuilder一样，也可以看成一个容器，创建后里面的内容是可变的。</p>
 <p>作用提高字符串操作效率，而且代码编写特别简洁，JDK8后出现，目前市场上很少人使用。</p>
 <blockquote>
 <p>构造方法</p>
 </blockquote>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -1050,12 +1073,10 @@
 </tr>
 </tbody>
 </table>
-</div>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">StringJoiner sj = new StringJoiner(&quot;,&quot;, &quot;[&quot;, &quot;]&quot;); // [1, 2, 3]</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>成员方法</p>
 </blockquote>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -1078,7 +1099,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 <blockquote>
 <p>使用示例</p>
 </blockquote>
