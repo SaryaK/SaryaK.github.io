@@ -5,11 +5,12 @@ function convertFurigana(text) {
     });
 }
 
-// 替换所有的 [ice-icon] 为 <div class="ice-icon"></div>
-// document.addEventListener("DOMContentLoaded", function () {
-//     // 选择特定的容器，例如一个 class 或 id
-//     const container = document.querySelector('.post-content'); // 请根据您的实际情况修改选择器
-//     if (container) {
-//         container.innerHTML = container.innerHTML.replace(/\[ice-icon\]/g, '<div class="ice-icon"></div>');
-//     }
-// });
+
+// 禁用右键
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
+document.addEventListener('mouseup', function() {
+    window.getSelection().removeAllRanges(); // 清除所有选区
+});

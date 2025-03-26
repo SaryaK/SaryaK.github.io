@@ -1,10 +1,13 @@
 /*
 ../font/
 仓耳今楷03-W04.ttf
+../font/Kosefont-JP.ttf
+../font/仓耳今楷03-W04.ttf
+../font/MapleMono-NF-CN-Light.ttf
 */
 @font-face {
   font-family: 'font1';
-  src: url(../font/Kosefont-JP.ttf);
+  src: url(../font/仓耳今楷03-W04.ttf);
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,21 +27,6 @@ pre {
   -o-tab-size: 4;
   /* Opera */
 }
-
-/* 鼠标修改 */
-/* 指针样式
-body {
-  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
-    default !important;
-}
-
-a,
-img {
-  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
-    default !important;
-} */
-
-
 
 
 /* 目录字体大小 */
@@ -135,88 +123,91 @@ img {
   border-radius: 8px;
 }
 
-/* 标题样式修改 */
-h2 {
-  position: relative;
-  padding-left: 25px;
-  margin: 20px 0;
-  font-weight: bold;
-}
-
-h2::after {
-  content: " ";
-  width: 8px;
-  height: 40px;
-  background: #7ed0ff;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 3px;
-  box-shadow: 0 5px 20px rgba(78, 163, 233, 0.7);
-}
-
-
-h4 {
-  position: relative;
-  padding-left: 25px;
-  margin: 20px 0;
-  font-weight: bold;
-}
-
-h4::after {
-  content: " ";
-  width: 8px;
-  height: 28px;
-  background: #ff6493;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 3px;
-  box-shadow: 0 5px 20px rgba(230, 62, 126, 0.7);
-
-}
-
-/* 鼠标悬停卡片的样式 */
-.recent-post-item:hover {
-  transform: scale(1.02);
-  /* 蓝光 */
-  box-shadow: 0 0 15px rgba(0, 123, 255, 0.4), 0 0 30px rgba(0, 123, 255, 0.3) !important;
-  /* 粉光 */
-  /* box-shadow: 0 0 15px rgba(255, 182, 193, 0.4), 0 0 30px rgba(255, 182, 193, 0.3) !important; */
-}
 
 /* 日汉字上面显示平假名的大小 */
 rt {
   font-size: 0.6em;
 }
 
-/* 代码块 */
-code {
-  color: green !important;
+body {
+  position: relative;
+  background-color: #E6F0FA;
+  background-image: radial-gradient(circle, #D3D3D3 1px, transparent 1px);
 }
 
-/* 分割线
-hr {
-  border: none;
-  height: 3px;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #FFF5F5 0%, #E6F0FA 50%, #E6F0FA 100%);
+  z-index: -1;
+}
+
+
+/* 鼠标悬停 */
+/* .recent-post-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.4), 0 0 30px rgba(0, 123, 255, 0.3) !important;
 } */
 
+/* .recent-post-item:hover {
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 
+  0 8px 20px rgba(255, 182, 193, 0.4),
+  0 12px 40px rgba(255, 182, 193, 0.25),
+  0 0 2px rgba(255, 182, 193, 0.8) !important;
+  background: linear-gradient(135deg, rgba(255, 182, 193, 0.05), rgba(255, 182, 193, 0.02));
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.05), rgba(0, 123, 255, 0.02));
+} */
 
-/* 只影响类名为post-content的a标签 */
-.post-content a,
-#article-container a {
-  letter-spacing: 2px !important;
-  text-transform: uppercase !important;
-  -webkit-text-stroke: 1px rgba(17, 13, 13, 0.8) !important;
-  --color: #ff6493 !important;
+/* <----------------------文字卡片选中特效---------------------------> */
+.recent-post-item:hover {
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 
+    0 8px 20px rgba(70, 130, 180, 0.4),
+    0 12px 40px rgba(70, 130, 180, 0.25),
+    0 0 2px rgba(70, 130, 180, 0.8) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: linear-gradient(135deg, rgba(70, 130, 180, 0.05), rgba(70, 130, 180, 0.02));
 }
 
-.post-content a:hover,
-#article-container a:hover {
-  -webkit-text-stroke: 1px var(--color) !important;
-  color: var(--color) !important;
-  text-decoration: none !important;
+/* <----------------------鼠标选中的字效果---------------------------> */
+::selection {
+  background-color: rgba(169, 188, 204, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
+
+
+/* .recent-post-item {
+  background-size: contain !important;
+  background-position: right !important;
+  background-repeat: no-repeat !important;
+} */
+
+.recent-post-item {
+  position: relative;
+  background-size: contain !important;
+  background-position: right !important;
+  background-repeat: no-repeat !important;
+}
+
+.recent-post-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+.recent-post-item > * {
+  position: relative;
+  z-index: 2;
+}
+
