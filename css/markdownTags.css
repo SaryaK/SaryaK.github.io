@@ -14,7 +14,7 @@
 }
 
 .post-content h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .post-content h4 {
@@ -51,13 +51,13 @@
   content: "";
   width: 8px;
   height: 35px;
-  background: linear-gradient(to bottom, #80d4da, #88b0e9);
+  background: linear-gradient(to bottom, #9082d1, #b997d4);
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 3px;
-  box-shadow: 0 5px 20px #009ff080;
+  box-shadow: 0 5px 20px #cdacec80;
 }
 
 .post-content h4::after {
