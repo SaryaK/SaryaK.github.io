@@ -1,17 +1,4 @@
-/*
-../font/
-仓耳今楷03-W04.ttf
-../font/Kosefont-JP.ttf
-../font/仓耳今楷03-W04.ttf
-../font/MapleMono-NF-CN-Light.ttf
-*/
-@font-face {
-  font-family: 'font1';
-  src: url(../font/仓耳今楷03-W04.ttf);
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
+
 
 /* 背景图片适应 */
 #page-header {
@@ -19,14 +6,12 @@
 }
 
 /* 设置代码块中的 tab 等于 4 个空格 */
-code,
+/* code,
 pre {
   tab-size: 4;
   -moz-tab-size: 4;
-  /* Firefox */
   -o-tab-size: 4;
-  /* Opera */
-}
+} */
 
 
 /* 目录字体大小 */
@@ -211,3 +196,24 @@ body::before {
   z-index: 2;
 }
 
+
+
+.toggle {
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.toggle summary {
+  background: #f8f9fa;
+  color: #2c3e50;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.toggle summary:hover {
+  background: #e9ecef; /* 悬停时稍深 */
+  color: #ce6db9; /* 蓝色文字 */
+}

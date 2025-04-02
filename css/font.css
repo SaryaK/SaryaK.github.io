@@ -1,0 +1,25 @@
+/*
+../font/Kosefont-JP.ttf
+../font/仓耳今楷03-W04.ttf
+../font/MapleMono-Light.woff2
+*/
+
+@font-face {
+    font-family: 'font1';
+    src: url('../font/仓耳今楷03-W04.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MapleMono';
+    src: url('../font/MapleMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+pre span {
+    font-family: 'MapleMono', 'font1';
+}
