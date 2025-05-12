@@ -114,7 +114,7 @@ rt {
   font-size: 0.6em;
 }
 
-body {
+/* body {
   position: relative;
   background-color: #E6F0FA;
   background-image: radial-gradient(circle, #D3D3D3 1px, transparent 1px);
@@ -129,25 +129,8 @@ body::before {
   height: 100%;
   background: linear-gradient(to right, #FFF5F5 0%, #E6F0FA 50%, #E6F0FA 100%);
   z-index: -1;
-}
-
-
-/* 鼠标悬停 */
-/* .recent-post-item:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 15px rgba(0, 123, 255, 0.4), 0 0 30px rgba(0, 123, 255, 0.3) !important;
 } */
 
-/* .recent-post-item:hover {
-  transform: scale(1.02) translateY(-5px);
-  box-shadow: 
-  0 8px 20px rgba(255, 182, 193, 0.4),
-  0 12px 40px rgba(255, 182, 193, 0.25),
-  0 0 2px rgba(255, 182, 193, 0.8) !important;
-  background: linear-gradient(135deg, rgba(255, 182, 193, 0.05), rgba(255, 182, 193, 0.02));
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  background: linear-gradient(135deg, rgba(0, 123, 255, 0.05), rgba(0, 123, 255, 0.02));
-} */
 
 /* <----------------------文字卡片选中特效---------------------------> */
 .recent-post-item:hover {
@@ -180,21 +163,6 @@ body::before {
   background-repeat: no-repeat !important;
 }
 
-.recent-post-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  z-index: 1;
-}
-
-.recent-post-item > * {
-  position: relative;
-  z-index: 2;
-}
 
 
 
@@ -217,3 +185,93 @@ body::before {
   background: #e9ecef; /* 悬停时稍深 */
   color: #ce6db9; /* 蓝色文字 */
 }
+
+/* =================================================== */
+/* 魔法粒子爆炸效果 */
+.magic-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+.magic-core {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px 5px var(--magic-color);
+  animation: magicCore 0.8s ease-out forwards;
+}
+
+.magic-particle {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: var(--magic-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: particleFly 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.magic-star {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: white;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  transform: translate(-50%, -50%);
+  animation: starFly 1.2s ease-out forwards;
+}
+
+@keyframes magicCore {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes particleFly {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes starFly {
+  0% {
+    transform: translate(-50%, -50%) scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(0) rotate(var(--rotate));
+    opacity: 0;
+  }
+}
+
+
+

@@ -74,78 +74,180 @@
 }
 
 
-
-/* 基础样式 - 只影响 .post-content 下的 a 标签 */
-#page a,
-.post-content a {
-  transition: all 0.3s ease !important;
-  letter-spacing: 1px !important;
-  --color: #ff6493 !important;
-  color: #333 !important;
-  text-decoration: none !important;
-  /* -webkit-text-stroke: 0.5px rgba(17, 13, 13, 0.6) !important; */
-  -webkit-text-stroke: 0.5px rgba(92, 124, 230, 0.6) !important;
-  font-weight: 500 !important;
-  padding: 2px 6px !important;
-  position: relative !important;
-  cursor: pointer !important;
-}
-
-#page a::after,
-.post-content a::after {
-  content: '' !important;
-  position: absolute !important;
-  width: 0 !important;
-  height: 2px !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  background: var(--color) !important;
-  transition: width 0.3s ease !important;
-}
-
-/* 悬停效果 */
-#page a:hover,
-.post-content a:hover {
-  color: var(--color) !important;
-  -webkit-text-stroke: 0.5px var(--color) !important;
-  background: rgba(255, 100, 147, 0.1) !important;
-  transform: scale(1.05) !important;
-  text-decoration: none !important;
-  background: linear-gradient(45deg, #ff6493, #ff8fb4) !important;
-  -webkit-background-clip: text !important;
-  color: transparent !important;
-}
-
-#page a:hover::after,
-.post-content a:hover::after {
-  width: 100% !important;
-}
-
-/* 活跃状态 */
-#page a:active,
-.post-content a:active {
-  transform: scale(0.98) !important;
-  background: rgba(255, 100, 147, 0.2) !important;
-}
-
 /* <--------------------code-----------------------> */
 
-code {
+/* code {
   background-color: #f9f9fb;
   padding: 4px 8px;
   border-radius: 6px;
   border: 1px solid #e4e4e7;
   display: inline-block;
   line-height: 1.4;
+} */
+
+code {
+  color: rgb(62, 121, 60) !important;
+  background-color: #f5f7f9;
+  color: #e83e8c;
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+  margin: 0 0.2em;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
 }
 
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  code {
+    background-color: #2d333b;
+    color: #ff7b9c;
+    border-color: rgba(255, 255, 255, 0.1);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  code:hover {
+    background-color: #343c46;
+  }
+}
+
+
+
+/* <--------------------img-----------------------> */
+.post-content img {
+  border: 2px solid #bdb3b3;
+  border-radius: 4px;
+  padding: 2px;
+  box-shadow: 0 0 15px rgba(150, 145, 145, 0.4);
+  transition: all 0.3s ease;
+}
+
+.post-content img:hover {
+  border-color: #7a7a7a;
+  box-shadow: 0 0 20px rgba(150, 145, 145, 0.6);
+}
+
+
+
+/* <--------------------a-----------------------> */
+/* .post-content a:not(:has(img)) {
+  color: #6c5ce7 !important;
+  text-decoration: none !important;
+  padding: 2px 6px !important;
+  border: 1px solid transparent !important;
+  border-radius: 3px !important;
+  transition: all 0.3s ease !important;
+}
+
+.post-content a:not(:has(img)):hover {
+  border-color: #6c5ce7 !important;
+  animation: borderBlink 1s infinite alternate !important;
+}
+
+@keyframes borderBlink {
+  from { border-color: #6c5ce7 !important; }
+  to { border-color: transparent !important; }
+} */
+
+#page a:not(:has(img)),
+.post-content a:not(:has(img)) {
+  color: #1a73e8 !important;
+  text-decoration: none !important;
+  padding: 2px 8px !important;
+  border-radius: 4px !important;
+  position: relative !important;
+  z-index: 1 !important;
+  transition: color 0.1s ease !important;
+  backdrop-filter: blur(0) !important;
+}
+
+#page a:not(:has(img)):hover,
+.post-content a:not(:has(img)):hover {
+  color: #174ea6 !important;
+  backdrop-filter: blur(4px) !important;
+  background-color: rgba(26, 115, 232, 0.1) !important;
+  box-shadow: 0 0 10px rgba(26, 115, 232, 0.2) !important;
+}
 
 /* <--------------------hr-----------------------> */
+/* hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.2), transparent);
+  margin: 25px 0;
+} */
+
+
 hr {
-  border: 0;
-  padding-top: 10px;
-  color: #ababe0;
-  border-top: 1px solid rgba(0,0,0,.1);
-  box-shadow: inset 0 10px 10px -10px;
+  height: 1px;
+  border: none;
+  background: #ddd;
+  margin: 30px 0;
+  position: relative;
 }
+
+hr:after {
+  content: '✦';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 10px;
+  background: white;
+  color: #888;
+}
+
+[data-theme="dark"] hr:after {
+    background: #121212;
+}
+
+/* hr {
+  height: 15px;
+  border: none;
+  margin: 30px 0;
+  background: rgba(220, 230, 240, 0.3);
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 5px rgba(70, 130, 180, 0.2);
+}
+
+hr:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(173, 216, 230, 0.3) 25%, 
+    rgba(135, 206, 250, 0.8) 50%, 
+    rgba(173, 216, 230, 0.3) 75%, 
+    transparent 100%);
+  animation: scan 4s linear infinite;
+  filter: drop-shadow(0 0 2px rgba(135, 206, 250, 0.5));
+}
+
+hr:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(0deg, transparent 0%, rgba(176, 224, 230, 0.2) 2%, transparent 3%),
+    linear-gradient(0deg, transparent 45%, rgba(176, 224, 230, 0.3) 47%, transparent 48%);
+  background-size: 100% 3px, 100% 3px;
+  opacity: 0.8;
+}
+
+@keyframes scan {
+  0% { left: -100%; transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { left: 100%; transform: translateX(0); }
+} */
 

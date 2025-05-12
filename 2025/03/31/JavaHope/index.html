@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>JavaGuma | サーヤームパ</title><meta name="author" content="sarya"><meta name="copyright" content="sarya"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="🎬上部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV17F411T7Ao 🎬下部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1yW4y1Y7Ms   Static静态变量和静态方法与工具类static将变量和方法公有化，可以用类名和对象调用。相当与Python中的类属性和类方法。 工具类是static的一个使用场景。 现在学到的三种类  Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaGuma">
+<meta property="og:url" content="http://www.mostart.site/2025/03/31/JavaHope/index.html">
+<meta property="og:site_name" content="サーヤームパ">
+<meta property="og:description" content="🎬上部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV17F411T7Ao 🎬下部：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1yW4y1Y7Ms   Static静态变量和静态方法与工具类static将变量和方法公有化，可以用类名和对象调用。相当与Python中的类属性和类方法。 工具类是static的一个使用场景。 现在学到的三种类  Java">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2025/03/06/c5655a51dc35a7b2.jpg">
+<meta property="article:published_time" content="2025-03-30T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-04-28T19:47:07.686Z">
+<meta property="article:author" content="sarya">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s3.bmp.ovh/imgs/2025/03/06/c5655a51dc35a7b2.jpg"><link rel="shortcut icon" href="https://s3.bmp.ovh/imgs/2025/03/06/c5655a51dc35a7b2.jpg"><link rel="canonical" href="http://www.mostart.site/2025/03/31/JavaHope/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'JavaGuma',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-04-29 03:47:07'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/wave.css"><link rel="stylesheet" href="/css/markdownTags.css"><link rel="stylesheet" href="/css/font.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s3.bmp.ovh/imgs/2025/03/06/c5655a51dc35a7b2.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://saryak.github.io"><i class="fa-fw fa fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-puzzle-piece"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://cloud.mostart.site"><i class="fa-fw fa fa-folder-open"></i><span> 资源</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-envelope"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://chat.mostart.site"><i class="fa-fw fa fa-robot"></i><span> 机器人</span></a></div><div class="menus_item"><a class="site-page" href="/laboratory/"><i class="fa-fw fa fa-server"></i><span> 实验室</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="サーヤームパ"><span class="site-name">サーヤームパ</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://saryak.github.io"><i class="fa-fw fa fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-puzzle-piece"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://cloud.mostart.site"><i class="fa-fw fa fa-folder-open"></i><span> 资源</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-envelope"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://chat.mostart.site"><i class="fa-fw fa fa-robot"></i><span> 机器人</span></a></div><div class="menus_item"><a class="site-page" href="/laboratory/"><i class="fa-fw fa fa-server"></i><span> 实验室</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">JavaGuma</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-03-30T16:00:00.000Z" title="发表于 2025-03-31 00:00:00">2025-03-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-28T19:47:07.686Z" title="更新于 2025-04-29 03:47:07">2025-04-29</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="JavaGuma"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><ul>
+<li>🎬上部：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17F411T7Ao">https://www.bilibili.com/video/BV17F411T7Ao</a></li>
+<li>🎬下部：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1yW4y1Y7Ms">https://www.bilibili.com/video/BV1yW4y1Y7Ms</a></li>
+</ul>
+<hr>
+<h3 id="Static静态变量和静态方法与工具类"><a href="#Static静态变量和静态方法与工具类" class="headerlink" title="Static静态变量和静态方法与工具类"></a>Static静态变量和静态方法与工具类</h3><p>static将变量和方法公有化，可以用类名和对象调用。相当与Python中的类属性和类方法。</p>
+<p>工具类是static的一个使用场景。</p>
+<p><strong>现在学到的三种类</strong></p>
+<ol>
+<li><code>JavaBean类</code>：用来描述一类事物的类。如Student、Teacher、Dog、Cat等。</li>
+<li><code>测试类</code>：用来检查其他类是否书写正确，带有main方法的类，是程序的主入口。</li>
+<li><code>工具类</code>：不是用来描述一类事物的，而是帮我们做一些事情的类。</li>
+</ol>
+<p>工具类通常将创建对象私有化，因为没有实际意义。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">private ArrUtil() &#123;&#125;</span><br><span class="line"></span><br><span class="line">public static int getMax() &#123;&#125;</span><br><span class="line">public static int getMin() &#123;&#125;</span><br><span class="line">public static int getSum() &#123;&#125;</span><br><span class="line">public static int getAvg() &#123;&#125;</span><br></pre></td></tr></table></figure>
+<details class="toggle" ><summary class="toggle-button" style="">例1：定义数组工具类</summary><div class="toggle-content"></div></details>
+<h3 id="Static的注意事项"><a href="#Static的注意事项" class="headerlink" title="Static的注意事项"></a>Static的注意事项</h3><ol>
+<li>静态方法中只能访问静态</li>
+<li>非静态方法中可以访问所有</li>
+<li>静态方法中没有this关键字</li>
+</ol>
+<blockquote>
+<p>代码方面理解</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Student.teacher_name = &quot;MonsT&quot;;</span><br><span class="line"></span><br><span class="line">        Student stu1 = new Student();</span><br><span class="line">        stu1.name = &quot;HEI1&quot;;</span><br><span class="line">        stu1.age = 18;</span><br><span class="line">        stu1.showInfo();</span><br><span class="line"></span><br><span class="line">        System.out.println(&quot;------------------------------&quot;);</span><br><span class="line"></span><br><span class="line">        Student stu2 = new Student();</span><br><span class="line">        stu2.name = &quot;HEI2&quot;;</span><br><span class="line">        stu2.age = 19;</span><br><span class="line">        stu2.showInfo();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class Student &#123;</span><br><span class="line">    String name;</span><br><span class="line">    int age;</span><br><span class="line">    static String teacher_name;</span><br><span class="line"></span><br><span class="line">    public void showInfo() &#123;</span><br><span class="line">        System.out.println(&quot;Name: &quot; + name + &quot; Age: &quot; + age + &quot; Teacher: &quot; + teacher_name);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public static void method() &#123;</span><br><span class="line">        System.out.println(&quot;静态方法&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>内存方面理解</p>
+</blockquote>
+<ol>
+<li>静态：随着类的加载而加载</li>
+<li>非静态：随着对象创建而加载</li>
+</ol>
+<h3 id="继承的概述"><a href="#继承的概述" class="headerlink" title="继承的概述"></a>继承的概述</h3><p>封装：对象代表什么，就得封装对应的数据，并提供数据对应的行为。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;-- Student --&gt;</span><br><span class="line">变量-name·age·gender·address</span><br><span class="line">方法-sleep()·study()·eat()·get/set()</span><br><span class="line"></span><br><span class="line">&lt;-- Teacher --&gt;</span><br><span class="line">变量-name·age·gender·address</span><br><span class="line">方法-sleep()·teach()·eat()·get/set()</span><br></pre></td></tr></table></figure>
+<p>抽取重复的部分</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;-- 范围更广的类(Person) --&gt;</span><br><span class="line">变量-name·age·gender·address</span><br><span class="line">方法-sleep()·eat()·get/set()</span><br><span class="line"></span><br><span class="line">&lt;-- Student --&gt;</span><br><span class="line">方法-study()</span><br><span class="line"></span><br><span class="line">&lt;-- Teacher --&gt;</span><br><span class="line">方法-teach()</span><br></pre></td></tr></table></figure>
+<p>Java中提供一个关键字extends，使用这个关键字，可以让一个类和另一个类建立起继承关系。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public class Student extends Person &#123;&#125;</span><br></pre></td></tr></table></figure>
+<p>Student成为子类（派生类），Person称为父类（基类或超类）。</p>
+<p><strong>🧽使用继承的好处</strong></p>
+<ul>
+<li>可以把多个子类中重复的代码抽取到父类中，提高代码复用性。</li>
+<li>子类可以在父类的基础上，增加其他功能，使子类更强大。</li>
+</ul>
+<p><strong>🧽什么使用用继承</strong></p>
+<p>当类与类之间，存在相同、共性的内容，并满足子类是父类中的一种，就可以考虑使用继承，来优化代码。</p>
+<h3 id="继承的特点和继承体系的设计"><a href="#继承的特点和继承体系的设计" class="headerlink" title="继承的特点和继承体系的设计"></a>继承的特点和继承体系的设计</h3><p><strong>🧽继承的特点</strong></p>
+<p>Java只支持单继承，不支持多继承，但支持多层继承。</p>
+<p>Java中每个类都直接或间接觉的继承于Object。</p>
+<ul>
+<li>单继承：一个子类只能继承一个父类。</li>
+<li>不支持多继承：子类不能同时加成多个父类。</li>
+<li>多层继承：子类A继承父类B，父类B可以继承父类C。（间接父类）</li>
+</ul>
+<hr>
+<p><strong>📔继承的练习</strong></p>
+<p>现在有四种动物：布偶猫、中国狸花猫、哈士奇、泰迪。<br>暂时不考虑属性，只要考虑行为。<br>请按照继承的思想特点进行继承体系的设计。</p>
+<p>四种动物分别有以下的行为为：<br>●布偶猫：吃饭、喝水、抓老鼠<br>●中国狸花猫：吃饭、喝水、抓老鼠<br>●哈士奇：吃饭、喝水、看家、拔家<br>●泰迪：吃饭、喝水、看家、撒娇</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">动物类：吃饭、喝水</span><br><span class="line">猫类：抓老鼠</span><br><span class="line">狗类：看家</span><br><span class="line">布偶猫类：null</span><br><span class="line">中国狸花猫类：null</span><br><span class="line">哈士奇类：拆家</span><br><span class="line">泰迪类：蹭一蹭</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">public class Animal &#123;</span><br><span class="line">    public void eat() &#123;</span><br><span class="line">        System.out.println(&quot;吃东西&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void drink() &#123;</span><br><span class="line">        System.out.println(&quot;喝水&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Cat extends Animal&#123;</span><br><span class="line">    public void catchMouse() &#123;</span><br><span class="line">        System.out.println(&quot;猫正在抓老鼠&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Dog extends Animal&#123;</span><br><span class="line">    public void lookHome() &#123;</span><br><span class="line">        System.out.println(&quot;狗正在看家&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Husky extends Dog&#123;</span><br><span class="line">    public void breakHome() &#123;</span><br><span class="line">        System.out.println(&quot;哈士奇正在拆家&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Teddy extends Dog&#123;</span><br><span class="line">    public void touch() &#123;</span><br><span class="line">        System.out.println(&quot;泰迪又在蹭我的腿了&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class LiHua extends Cat&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Ragdoll extends Cat&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Test &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Ragdoll rd = new Ragdoll();</span><br><span class="line">        rd.catchMouse();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="子类能继承父类中的内容"><a href="#子类能继承父类中的内容" class="headerlink" title="子类能继承父类中的内容"></a>子类能继承父类中的内容</h2><p><strong>💡子类到底能继承父类中的哪些内容？</strong></p>
+<p>一个类中包括：构造方法、成员变量、成员方法</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类的内容</th>
+<th style="text-align:center">public</th>
+<th style="text-align:center">private</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">构造方法</td>
+<td style="text-align:center">不能</td>
+<td style="text-align:center">不能</td>
+</tr>
+<tr>
+<td style="text-align:center">成员变量</td>
+<td style="text-align:center">能</td>
+<td style="text-align:center">能</td>
+</tr>
+<tr>
+<td style="text-align:center">成员方法</td>
+<td style="text-align:center">能</td>
+<td style="text-align:center">不能</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>子类从父类继承下来的私有成员变量不能直接获取，只能通过成员方法get/set获取。</p>
+<p><strong>📈继承的内存图</strong></p>
+<p><img src="https://s3.bmp.ovh/imgs/2025/04/27/8360f6ea6a1a4a1c.png" alt=""></p>
+<h3 id="成员变量的访问特点"><a href="#成员变量的访问特点" class="headerlink" title="成员变量的访问特点"></a>成员变量的访问特点</h3><p>直接写变量触发就近原则：谁离我近，我就用谁。</p>
+<p>成员变量重名时，可使用关键字指代变量。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(name)</span><br><span class="line">System.out.println(this.name)</span><br><span class="line">System.out.println(super.name)</span><br></pre></td></tr></table></figure>
+<h3 id="成员方法的访问特点"><a href="#成员方法的访问特点" class="headerlink" title="成员方法的访问特点"></a>成员方法的访问特点</h3><p>直接写变量触发就近原则：谁离我近，我就用谁。</p>
+<p>成员方法重名时，可使用关键字指代方法。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">this.eat()</span><br><span class="line">super.eat()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>虚方法表</p>
+</blockquote>
+<p>虚方法表为优化Java查找父类方法的效率。</p>
+<p>虚方法表中的方法需满足：非private、非static、非final。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A类(虚方法表A)--&gt;B类(虚方法表B)--&gt;C类(虚方法表C)</span><br></pre></td></tr></table></figure>
+<p>虚方法表在父类虚方法表的基础上添加自己类中的虚方法。</p>
+<blockquote>
+<p>方法重写</p>
+</blockquote>
+<p>当父类的方法，不能满足子类现在的需求时，我们就需要把这个方法进行重写。</p>
+<p>子类中重写方法上面需要加上@Override</p>
+<p><strong>1.方法重写</strong></p>
+<p>当父类的方法，不能满足子类现在的需求时，需要进行重写方法。</p>
+<p><strong>2.书写格式</strong></p>
+<p>在继承体系中，子类出现了和父类一模一样的方法声明，我们称子类这个方法是重写的方法。</p>
+<p><strong>3.@Override重写注解</strong></p>
+<ul>
+<li>@Override放在重写后方法上，校验子类重写时语法是否正确。</li>
+<li>加上注解后如果有红色波浪线，表示语法错误。</li>
+<li>建议重写方法都加@Override注解，代码安全，优雅。</li>
+</ul>
+<p><strong>🔮方法注意事项和要求</strong></p>
+<ol>
+<li>重写方法的名称，形参列表必须与父类中的一致。</li>
+<li>子类重写父类方法时，访问权限子类必须大于等于父类（暂时了解：空着不写 &lt; protected ）public）</li>
+<li>子类重写父类方法时，返回值类型子类必须小于等于父类</li>
+<li>建议：重写的方法长度和父类保持一致。</li>
+<li>只有被添加到虚方法表中的方法才能被重写。</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://www.mostart.site">sarya</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://www.mostart.site/2025/03/31/JavaHope/">http://www.mostart.site/2025/03/31/JavaHope/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://www.mostart.site" target="_blank">サーヤームパ</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Java/">Java</a></div><div class="post_share"><div class="social-share" data-image="https://s3.bmp.ovh/imgs/2025/03/06/c5655a51dc35a7b2.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2025/04/03/Linux%E5%91%BD%E4%BB%A4/" title="Linux命令"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Linux命令</div></div></a></div><div class="next-post pull-right"><a href="/2025/03/26/%E6%A0%87%E6%97%A5%E4%B8%AD%E7%BA%A7/" title="标日中级"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">标日中级</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s3.bmp.ovh/imgs/2025/03/06/c5655a51dc35a7b2.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">sarya</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.baidu.com"><i class="fa fa-commenting"></i><span>和我聊天</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是我的博客！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Static%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F%E5%92%8C%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E4%B8%8E%E5%B7%A5%E5%85%B7%E7%B1%BB"><span class="toc-text">Static静态变量和静态方法与工具类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Static%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-text">Static的注意事项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E7%9A%84%E6%A6%82%E8%BF%B0"><span class="toc-text">继承的概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E7%9A%84%E7%89%B9%E7%82%B9%E5%92%8C%E7%BB%A7%E6%89%BF%E4%BD%93%E7%B3%BB%E7%9A%84%E8%AE%BE%E8%AE%A1"><span class="toc-text">继承的特点和继承体系的设计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%90%E7%B1%BB%E8%83%BD%E7%BB%A7%E6%89%BF%E7%88%B6%E7%B1%BB%E4%B8%AD%E7%9A%84%E5%86%85%E5%AE%B9"><span class="toc-text">子类能继承父类中的内容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E7%9A%84%E8%AE%BF%E9%97%AE%E7%89%B9%E7%82%B9"><span class="toc-text">成员变量的访问特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%90%E5%91%98%E6%96%B9%E6%B3%95%E7%9A%84%E8%AE%BF%E9%97%AE%E7%89%B9%E7%82%B9"><span class="toc-text">成员方法的访问特点</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/05/Vim%E5%91%BD%E4%BB%A4/" title="Vim命令">Vim命令</a><time datetime="2025-05-04T16:00:00.000Z" title="发表于 2025-05-05 00:00:00">2025-05-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/05/%E6%98%93%E7%8F%AD%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0/" title="易班自动签到">易班自动签到</a><time datetime="2025-05-04T16:00:00.000Z" title="发表于 2025-05-05 00:00:00">2025-05-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/05/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F%E6%97%B6%E9%97%B4%E7%BA%BF/" title="明日方舟时间线">明日方舟时间线</a><time datetime="2025-05-04T16:00:00.000Z" title="发表于 2025-05-05 00:00:00">2025-05-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/01/%E4%BC%98%E8%B4%A8%E7%9A%84MCP%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%97%E8%A1%A8/" title="优质的MCP服务器列表">优质的MCP服务器列表</a><time datetime="2025-04-30T16:00:00.000Z" title="发表于 2025-05-01 00:00:00">2025-05-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/04/21/Docker/" title="Docker">Docker</a><time datetime="2025-04-21T11:54:45.361Z" title="发表于 2025-04-21 19:54:45">2025-04-21</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By sarya</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script></div><script src="/js/botton.js"></script><script src="/js/background.js"></script><script src="/js/recent_post.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>

@@ -29,4 +29,4 @@ function setRandomBackground() {
     document.getElementById("page-header").style.backgroundImage = `url(${selectedImage})`;
 }
 
-// setRandomBackground();
+setRandomBackground();
